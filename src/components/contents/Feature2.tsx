@@ -84,13 +84,13 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-72">
+          <div className="lg:pl-52">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-2xl mb-6 text-3xl lg:text-6xl font-bold text-black">
+                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-black">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
@@ -101,7 +101,7 @@ export default function Feature2() {
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-md  mb-2 text-sm lg:text-lg text-black">
+                <p className="max-w-lg  mb-2 text-sm lg:text-lg text-black">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
