@@ -87,7 +87,7 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-72">
+          <div className="lg:pl-52">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
@@ -99,7 +99,7 @@ export default function Feature2() {
                   <span className="leading-tight">document editor</span>
                 </div>
 
-                <p className=" max-w-xl  mb-2 text-sm lg:text-md text-white">
+                <p className=" max-w-lg  mb-2 text-sm lg:text-md text-white">
                   A full editor, so you can create and share projects and
                   documents with your team - quickly and easily. Plus, an
                   easy-to-use adjustment panel makes working with existing or
@@ -109,8 +109,8 @@ export default function Feature2() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-3  px-6  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
-                    <span className="mr-4 align-middle">
+                  <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                    <span className="mr-3 align-middle">
                       Give it a try now!
                     </span>
                     <Image

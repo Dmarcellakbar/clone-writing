@@ -90,7 +90,7 @@ export default function Feature2() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-2xl mb-6 text-3xl lg:text-7xl font-bold text-black">
+                <div className=" max-w-2xl mb-6 text-3xl lg:text-6xl font-bold text-black">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
@@ -101,7 +101,7 @@ export default function Feature2() {
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-xl  mb-2 text-sm lg:text-lg text-black">
+                <p className="max-w-md  mb-2 text-sm lg:text-lg text-black">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
@@ -109,8 +109,8 @@ export default function Feature2() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-3  px-6  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
-                    <span className="mr-4 align-middle">
+                  <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                    <span className="mr-3 align-middle">
                       Give it a try now!
                     </span>
                     <Image
@@ -120,7 +120,7 @@ export default function Feature2() {
                       className="inline"
                     />
                   </button>
-                  <button className=" lg:ml-4 md:ml-4 lg:mt-0 md:mt-0 mt-4 py-3  px-6  text-white text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-2 md:ml-4 lg:mt-0 md:mt-0 mt-4 py-2  px-4  text-white text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Create your own Custom AI Tool!
                     </span>

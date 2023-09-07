@@ -87,7 +87,7 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-72">
+          <div className="lg:pl-52">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
