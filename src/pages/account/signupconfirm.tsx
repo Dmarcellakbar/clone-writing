@@ -12,7 +12,11 @@ export default function Signup() {
     router.push('/account/signup');
   };
 
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+  });
 
   useEffect(() => {
     // Ambil data pengguna dari cookie
@@ -133,74 +137,68 @@ export default function Signup() {
                     </div>
 
                     <form className="w-full max-w-lg mt-6">
-                      {user ? (
-                        <>
-                          <div className="flex flex-wrap -mx-3 mb-2">
-                            <div className="w-full md:w-1/2 px-3 mb-2 md:mb-0">
-                              <label
-                                className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
-                                htmlFor="grid-first-name"
-                              >
-                                First name
-                              </label>
-                              <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
-                                {user.firstname}
-                              </span>
-                            </div>
-                            <div className="w-full md:w-1/2 px-3">
-                              <label
-                                className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
-                                htmlFor="grid-last-name"
-                              >
-                                Last name
-                              </label>
-                              <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
-                                {user.lastname}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="flex flex-wrap -mx-3 mb-2">
-                            <div className="w-full px-3">
-                              <label
-                                className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
-                                htmlFor="grid-password"
-                              >
-                                Email address
-                              </label>
-                              <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
-                                {user.email}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="flex flex-wrap -mx-3 mb-6">
-                            <div className="w-full px-3">
-                              <label
-                                className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
-                                htmlFor="grid-password"
-                              >
-                                Verification Pin
-                              </label>
-                              <input
-                                className="bg-white appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-500"
-                                id="grid-password"
-                                type="email"
-                              />
-                            </div>
-                          </div>
-                          <div className="mt-6">
-                            <Link href={'/account/package'}>
-                              <button
-                                className="shadow w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                                type="button"
-                              >
-                                Continue
-                              </button>
-                            </Link>
-                          </div>
-                        </>
-                      ) : (
-                        ''
-                      )}
+                      <div className="flex flex-wrap -mx-3 mb-2">
+                        <div className="w-full md:w-1/2 px-3 mb-2 md:mb-0">
+                          <label
+                            className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
+                            htmlFor="grid-first-name"
+                          >
+                            First name
+                          </label>
+                          <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
+                            {user?.firstname}
+                          </span>
+                        </div>
+                        <div className="w-full md:w-1/2 px-3">
+                          <label
+                            className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
+                            htmlFor="grid-last-name"
+                          >
+                            Last name
+                          </label>
+                          <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
+                            {user?.lastname}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap -mx-3 mb-2">
+                        <div className="w-full px-3">
+                          <label
+                            className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
+                            htmlFor="grid-password"
+                          >
+                            Email address
+                          </label>
+                          <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
+                            {user?.email}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex flex-wrap -mx-3 mb-6">
+                        <div className="w-full px-3">
+                          <label
+                            className="block  tracking-wide text-gray-700 text-sm font-bold mb-2"
+                            htmlFor="grid-password"
+                          >
+                            Verification Pin
+                          </label>
+                          <input
+                            className="bg-white appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-indigo-500"
+                            id="grid-password"
+                            type="email"
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-6">
+                        <Link href={'/account/package'}>
+                          <button
+                            className="shadow w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                            type="button"
+                          >
+                            Continue
+                          </button>
+                        </Link>
+                      </div>
                     </form>
                   </div>
                 </div>

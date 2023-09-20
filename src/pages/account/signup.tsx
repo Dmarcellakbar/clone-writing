@@ -6,6 +6,12 @@ import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
 import { Error } from '@/components/Error';
 
+interface FormErrors {
+  firstname?: string;
+  lastname?: string;
+  email?: string;
+}
+
 export default function Signup() {
   const router = useRouter();
   const [formData, setFormData] = useState({
@@ -15,7 +21,7 @@ export default function Signup() {
     token: '',
     trackingId: null,
   });
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<FormErrors>({});
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
@@ -23,7 +29,7 @@ export default function Signup() {
   };
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: FormErrors = {};
 
     const nameRegex = /^[A-Za-z\s]+$/; // Hanya huruf dan spasi diizinkan
 
