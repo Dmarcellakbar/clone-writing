@@ -1,0 +1,84 @@
+/* components/Navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logbtnfeature1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #8e5bf4;
+  font-weight: 700;
+  background: linear-gradient(to right, #8e5bf4 0%, #c84eca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logscrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #ff7b00;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffa600 0%, #ff7b00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btnfeature1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #8e5bf4;
+  font-weight: 700;
+  background: linear-gradient(to right, #8e5bf4 0%, #c84eca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #ff7b00;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffa600 0%, #ff7b00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}

@@ -20,7 +20,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Writing Hero</title>
-        <link rel="icon" href="/robohead2.png" type="image/png" />
+        <link rel="icon" href="/robohead2.ico" />
         <meta
           name="description"
           content="Boost your writing prowess with over 100+ AI tools 
@@ -74,9 +74,9 @@ const Home: NextPage = () => {
             link4={'Contact'}
             link4To={'/contact'}
             link5={'Log in'}
-            link5To={'/login'}
+            link5To={'/account/login'}
             link6={'Sign up'}
-            link6To={'/signup'}
+            link6To={'/account/signup'}
           />
           <Element className="element" name="section1">
             <Hero />
