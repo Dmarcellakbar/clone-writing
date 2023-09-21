@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 export default function handler(req, res) {
   if (req.method === 'POST') {
     const { firstname, lastname, email, token, trackingId } = req.body;
