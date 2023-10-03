@@ -1,9 +1,41 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Stepper from '@/components/Stepper';
 import Image from 'next/image';
 
 export default function Package() {
+  const [btnPremium, setBtnpremium] = useState(true);
+  const [btnUnlimited, setBtnunlimited] = useState(true);
+  const handlePremium = () => {
+    setBtnpremium(!btnPremium);
+  };
+  const handleUnlimited = () => {
+    setBtnunlimited(true);
+  };
+
+  const [premiumPrice, setPremiumPrice] = useState(24);
+  const [wpPrice, setwpPrice] = useState(21.5);
+  const [unlimitedPrice, setUnlimitedPrice] = useState(48);
+
+  const [premiumValue, setPremiumValue] = useState(25);
+  const [premiumSeat, setPremiumSeat] = useState(1);
+  const [unlimitedSeat, setUnlimitedSeat] = useState(1);
+  const handlePremiumChange = (e: any) => {
+    setPremiumValue(parseInt(e.target.value));
+    const newwpPremium = parseInt(e.target.value) * 2.5;
+    setwpPrice(newwpPremium + 19);
+  };
+  const handlePremiumSeatChange = (e: any) => {
+    setPremiumSeat(parseInt(e.target.value));
+    const newPricePremium = parseInt(e.target.value) * 5;
+    setPremiumPrice(newPricePremium + 19);
+  };
+  const handleUnlimitedSeatChange = (e: any) => {
+    setUnlimitedSeat(parseInt(e.target.value));
+    const newPriceUnlimited = parseInt(e.target.value) * 19;
+    setUnlimitedPrice(newPriceUnlimited + 29);
+  };
+
   return (
     <>
       <section>
@@ -92,24 +124,69 @@ export default function Package() {
                             value="packed-premium"
                             className="hidden peer"
                             required
+                            onChange={handlePremium}
                           />
                           <label
                             htmlFor="packed-premium"
-                            className="inline-flex items-center justify-between w-full px-4 py-3 text-black bg-white border-2  rounded-lg cursor-pointer peer-checked:border-indigo-600 peer-checked:text-black hover:text-indigo-600 hover:bg-gray-100 "
+                            className="grid w-full px-4 py-3 text-white bg-white border-2  rounded-lg cursor-pointer peer-checked:border-indigo-600 peer-checked:text-black hover:text-indigo-600 hover:bg-gray-100 peer-checked:pb-60"
                           >
-                            <div className="block">
-                              <div className="w-full text-lg font-semibold">
-                                Premium
+                            <div className="w-full text-black items-center justify-between flex ">
+                              <div className="block">
+                                <div className="w-full text-lg font-semibold">
+                                  Premium
+                                </div>
+                                <div className="w-full text-sm">
+                                  <b>{premiumValue}K</b> words .{' '}
+                                  <b>{premiumSeat}</b> seats
+                                </div>
                               </div>
-                              <div className="w-full text-sm">
-                                <b>25K</b> words . <b>1</b> seats
+                              <div className="inline-flex items-end">
+                                <div className="font-bold text-2xl">
+                                  ${premiumPrice - 5}
+                                </div>
+                                <div className="text-sm">/mo</div>
                               </div>
-                            </div>
-                            <div className="inline-flex items-end">
-                              <div className="font-bold text-2xl">$19</div>
-                              <div className="text-sm">/mo</div>
                             </div>
                           </label>
+                          <div className="absolute top-16  w-full px-4 hidden peer-checked:block  ">
+                            <hr
+                              className="my-5 border-t border-indigo-500"
+                              aria-hidden="true"
+                            />
+                            <div className="text-sm font-semibold">Words</div>
+                            <div className="w-full flex justify-between">
+                              <div>25K</div>
+                              <div>1000K</div>
+                            </div>
+                            <div className="pt-2 pb-4">
+                              <input
+                                type="range"
+                                className="w-full h-1.5 appearance-none rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+                                min="25"
+                                max="1000"
+                                step="10"
+                                value={premiumValue}
+                                onChange={handlePremiumChange}
+                              />
+                            </div>
+                            <div className="text-sm font-semibold">Seats</div>
+                            <div className="w-full flex justify-between">
+                              <div>1</div>
+                              <div>10</div>
+                            </div>
+                            <div className="pt-2 pb-4">
+                              <input
+                                type="range"
+                                className="w-full h-1.5 appearance-none rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+                                min="1"
+                                max="10"
+                                step="1"
+                                value={premiumSeat}
+                                onChange={handlePremiumSeatChange}
+                              />
+                            </div>
+                          </div>
+
                           <button
                             style={{ top: '-10px', left: '10px' }}
                             className="absolute cursor-default font-semibold text-sm px-2  text-white rounded-lg bg-indigo-500"
@@ -132,21 +209,47 @@ export default function Package() {
                           />
                           <label
                             htmlFor="packed-unlimited"
-                            className="inline-flex items-center justify-between w-full px-4 py-3 text-black bg-white border-2  rounded-lg cursor-pointer peer-checked:border-indigo-600 peer-checked:text-black hover:text-indigo-600 hover:bg-gray-100 "
+                            className="inline-flex items-center justify-between w-full px-4 py-3 text-black bg-white border-2  rounded-lg cursor-pointer peer-checked:border-indigo-600 peer-checked:text-black hover:text-indigo-600 hover:bg-gray-100 peer-checked:pb-32"
                           >
                             <div className="block">
                               <div className="w-full text-lg font-semibold">
                                 Unlimited
                               </div>
                               <div className="w-full text-sm">
-                                <b>Unlimited</b> words . <b>1</b> seats
+                                <b>Unlimited</b> words . <b>{unlimitedSeat}</b>{' '}
+                                seats
                               </div>
                             </div>
                             <div className="inline-flex items-end">
-                              <div className="font-bold text-2xl">$29</div>
+                              <div className="font-bold text-2xl">
+                                ${unlimitedPrice - 19}
+                              </div>
                               <div className="text-sm">/mo</div>
                             </div>
                           </label>
+                          <div className="absolute top-16  w-full px-4 hidden peer-checked:block  ">
+                            <hr
+                              className="my-5 border-t border-indigo-500"
+                              aria-hidden="true"
+                            />
+
+                            <div className="text-sm font-semibold">Seats</div>
+                            <div className="w-full flex justify-between">
+                              <div>1</div>
+                              <div>25</div>
+                            </div>
+                            <div className="pt-2 pb-4">
+                              <input
+                                type="range"
+                                className="w-full h-1.5 appearance-none rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+                                min="1"
+                                max="25"
+                                step="1"
+                                value={unlimitedSeat}
+                                onChange={handleUnlimitedSeatChange}
+                              />
+                            </div>
+                          </div>
                           <button
                             style={{ top: '-10px', left: '10px' }}
                             className="absolute cursor-default font-semibold text-sm px-2  text-white rounded-lg bg-indigo-500"
