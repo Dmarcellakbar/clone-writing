@@ -9,7 +9,7 @@ export default function Loading() {
     >
       <div className="my-20">
         <div className=" flex justify-center align-middle ">
-          <Image src={'/head.png'} alt={'load'} width={200} height={200} />
+          <Image src={'/headrobo.svg'} alt={'load'} width={200} height={200} />
         </div>
         <div className="flex justify-center ">
           <div className="loader-line"></div>

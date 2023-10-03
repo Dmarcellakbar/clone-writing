@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import LogoWrite from '@/assets/img/logo-writing.png';
+import LogoWrite from '../../public/logowide.svg';
 
 export default function error404() {
   return (

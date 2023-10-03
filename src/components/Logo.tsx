@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ImgLogo from '@/assets/img/logo-writing.png';
+import ImgLogo from '../../public/logowide.svg';
 
 const Logo = () => {
   return (

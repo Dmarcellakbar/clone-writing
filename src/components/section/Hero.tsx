@@ -1,9 +1,9 @@
 import TextArea from '@/components/TextArea';
 import Image from 'next/image';
-import objLeft from '@/assets/img/MaskLeft.png';
-import objRight from '@/assets/img/MaskRight.png';
-import headRobo from '@/assets/img/robohead.png';
-import Dash from '@/assets/img/dash.png';
+import objLeft from '@/assets/img/leftdot.svg';
+import objRight from '@/assets/img/rightdot.svg';
+import headRobo from '@/assets/img/headwhite.svg';
+import Dash from '@/assets/img/screenwriting.svg';
 
 export default function Home() {
   return (
@@ -25,8 +25,8 @@ export default function Home() {
                   </div>
                   <TextArea />
 
-                  <div className="pt-8 ">
-                    <button className="text-sm py-3  px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <div className="pt-8 flex justify-center">
+                    <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                       <span className="mr-4 align-middle">
                         Sign Up for <b>FREE</b>
                       </span>
@@ -37,14 +37,33 @@ export default function Home() {
                         className="inline"
                       />
                     </button>
-                    <button className=" ml-4 py-3  px-6  text-indigo-500 font-bold  rounded-full bg-white border border-indigo-500">
-                      <span className="leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">
-                        View Plans
-                      </span>
-                    </button>
+
+                    {/* <button className="text-sm py-3  px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                      <div className="bg-white rounded-full sticky top-0">
+                        <span className="leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">
+                          View Plans
+                        </span>
+                      </div>
+                    </button> */}
+
+                    <div
+                      style={{
+                        paddingTop: '1px',
+                        paddingBottom: '1px',
+                        paddingLeft: '1px',
+                        paddingRight: '1px',
+                      }}
+                      className="w-fit h-fit cursor-pointer text-sm text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+                    >
+                      <div className="bg-white rounded-full px-6 py-4">
+                        <span className="leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">
+                          View Plans
+                        </span>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="bg-white mt-20 px-2 rounded-t-3xl lg:rounded-t-full  border-t border-gray-200">
+                  <div className="bg-white mt-20  pb-6 px-2 rounded-t-3xl lg:rounded-t-full  border-t border-gray-200">
                     <h2 className="text-2xl pt-10 lg:px-20 lg:text-4xl font-extrabold ">
                       <span className="text-black leading-tight">
                         Over 100+ AI tools, a full document editor for long-form
@@ -52,8 +71,10 @@ export default function Home() {
                       </span>
                     </h2>
                   </div>
-                  <div className="bg-gradient-to-r from-purple-700 from-30% via-purple-500 via-80% to-pink-500 to-100% p-3 rounded-3xl lg:w-fit ">
-                    <Image src={Dash} alt={''} width={900} />
+                  <div className="bg-white rounded-b-3xl">
+                    <div className="bg-gradient-to-r from-purple-700 from-30% via-purple-500 via-80% to-pink-500 to-100% p-3 rounded-3xl lg:w-fit ">
+                      <Image src={Dash} alt={''} width={900} />
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import headRobo2 from '@/assets/img/robohead2.png';
-import imgF2 from '@/assets/img/imgFeature2.png';
+import headRobo2 from '@/assets/img/headnormal.svg';
+import imgF2 from '@/assets/img/feat2.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
@@ -16,18 +16,18 @@ export default function Feature2() {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -200,
-        opacity: -2,
+        y: -150,
+        opacity: 0,
       },
       {
         y: 0,
-        opacity: 3,
-        duration: 1,
-        ease: 'none',
+        opacity: 1,
+        duration: 30,
+        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: '5% 80%',
-          end: '40% top',
+          end: '40% 20%',
           scrub: true,
           // markers: true,
         },
@@ -38,15 +38,17 @@ export default function Feature2() {
       sectionRefImage.current,
       {
         x: 600,
+        opacity: 0,
       },
       {
         x: 0,
-        duration: 0.5,
-        ease: 'none',
+        opacity: 1,
+        duration: 100,
+        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
-          end: '20% 40%',
+          end: '55% 40%',
           scrub: true,
           // markers: true,
         },

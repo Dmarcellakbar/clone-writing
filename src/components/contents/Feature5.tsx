@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import headRobo from '@/assets/img/robohead.png';
-import imgF5 from '@/assets/img/imgFeature5.png';
+import headRobo from '@/assets/img/headwhite.svg';
+import imgF5 from '@/assets/img/feat5.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';

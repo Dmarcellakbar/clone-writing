@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import headRobo from '@/assets/img/robohead.png';
+import headRobo from '@/assets/img/footerlogo.svg';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -10,15 +10,7 @@ export default function Footer() {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="pb-10">
             <Link href="/" className="flex items-center">
-              <Image
-                src={headRobo}
-                className="h-8 mr-3"
-                alt="logo"
-                width={50}
-              />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-50">
-                WritingHero.
-              </span>
+              <Image src={headRobo} className="h-15" alt="logo" />
             </Link>
           </div>
           <div className="md:flex md:justify-between">

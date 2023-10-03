@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import ImgRobo from '@/assets/img/robohome.png';
+import ImgRobo from '@/assets/img/fullrobo.svg';
 
 export default function TextArea() {
   const [text, setText] = useState('');
@@ -67,7 +67,7 @@ export default function TextArea() {
       </div>
       <div
         className="absolute w-0  lg:w-fit md:w-0 sm:w-0"
-        style={{ top: '-60px', right: '0px' }}
+        style={{ top: '-60px', right: '0px', zIndex: 3 }}
       >
         <Image src={ImgRobo} alt={'robo'} width={160} />
       </div>

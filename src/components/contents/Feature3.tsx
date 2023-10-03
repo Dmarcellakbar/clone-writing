@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import headRobo2 from '@/assets/img/robohead2.png';
-import imgF3 from '@/assets/img/imgFeature3.png';
+import headRobo2 from '@/assets/img/headnormal.svg';
+import imgF3 from '@/assets/img/feat3.svg';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';

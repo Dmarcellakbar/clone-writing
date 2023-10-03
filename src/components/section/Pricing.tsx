@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import objLeft from '@/assets/img/MaskLeft.png';
-import objRight from '@/assets/img/MaskRight.png';
+import objLeft from '@/assets/img/leftdot.svg';
+import objRight from '@/assets/img/rightdot.svg';
 
 export default function Pricing() {
   return (

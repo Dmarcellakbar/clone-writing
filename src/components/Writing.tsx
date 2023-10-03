@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import LogoWrite from '@/assets/img/logo-writing.png';
-import Card1 from '@/assets/img/card1.png';
-import Card2 from '@/assets/img/card2.png';
-import Card3 from '@/assets/img/card3.png';
-import headRobo from '@/assets/img/robohead.png';
+import Card1 from '@/assets/img/writing-1.svg';
+import Card2 from '@/assets/img/writing-2.svg';
+import Card3 from '@/assets/img/writing-3.svg';
+import headRobo from '@/assets/img/headwhite.svg';
+import ImgLogo from '../../public/logowide.svg';
 
 export default function Pricing() {
   return (
@@ -12,7 +12,7 @@ export default function Pricing() {
       <section className="bg-white relative">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 z-10">
           <div className="mx-auto max-w-screen-md flex items-center justify-center mb-8 lg:mb-12  ">
-            <Image src={LogoWrite} alt={''} width={350} />
+            <Image src={ImgLogo} alt={''} width={350} />
           </div>
           <div className="relative space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 ">
             {/* <!-- Pricing Card --> */}
