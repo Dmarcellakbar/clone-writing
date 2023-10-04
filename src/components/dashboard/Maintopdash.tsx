@@ -4,7 +4,7 @@ export default function Maintopdash() {
   return (
     <>
       <div className="flex flex-wrap gap-2 p-4">
-        <div className="px-2flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 purple-button text-white bg-purple-600">
+        <div className="px-2 flex select-none px-3 py-2 content-center cursor-pointer rounded  text-white bg-purple-600">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">All</span>
