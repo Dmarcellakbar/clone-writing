@@ -4,6 +4,7 @@ import objLeft from '@/assets/img/leftdot.svg';
 import objRight from '@/assets/img/rightdot.svg';
 import headRobo from '@/assets/img/headwhite.svg';
 import Dash from '@/assets/img/screenwriting.svg';
+import DashScroll from '../dashboard/DashScroll';
 
 export default function Home() {
   return (
@@ -71,9 +72,9 @@ export default function Home() {
                       </span>
                     </h2>
                   </div>
-                  <div className="bg-white rounded-b-3xl">
+                  <div className="bg-white rounded-b-3xl flex justify-center">
                     <div className="bg-gradient-to-r from-purple-700 from-30% via-purple-500 via-80% to-pink-500 to-100% p-3 rounded-3xl lg:w-fit ">
-                      <Image src={Dash} alt={''} width={900} />
+                      <DashScroll />
                     </div>
                   </div>
                 </div>
