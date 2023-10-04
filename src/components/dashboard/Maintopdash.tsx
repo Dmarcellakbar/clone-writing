@@ -26,7 +26,7 @@ export default function Maintopdash() {
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">
@@ -35,14 +35,14 @@ export default function Maintopdash() {
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">Blog Posts</span>
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">
@@ -51,21 +51,21 @@ export default function Maintopdash() {
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">Email</span>
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">Marketing</span>
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">
@@ -74,14 +74,14 @@ export default function Maintopdash() {
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">SEO</span>
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">
@@ -90,14 +90,14 @@ export default function Maintopdash() {
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">Website</span>
             </div>
           </div>
         </div>
-        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button">
+        <div className="flex select-none px-3 py-2 content-center cursor-pointer rounded bg-slate-200/50 clear-button text-black">
           <div className="flex items-center w-full">
             <div className="flex-1 min-w-0">
               <span className="text-sm font-semibold truncate">Writing</span>
