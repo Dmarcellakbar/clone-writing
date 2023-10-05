@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 
-export default function Feature2() {
+export default function Feature5() {
   const sectionRefText = useRef(null);
   const sectionRefImage = useRef(null);
   const sectionRefImageMobile = useRef(null);
@@ -16,18 +16,18 @@ export default function Feature2() {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: 500,
-        opacity: -2,
+        y: 200,
+        opacity: 0,
       },
       {
         y: 0,
-        opacity: 3,
+        opacity: 1,
         duration: 1,
-        ease: 'none',
+        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '25% 80%',
-          end: '40% 50%',
+          start: 'top 60%',
+          end: '30% 10%',
           scrub: true,
           // markers: true,
         },
@@ -37,16 +37,18 @@ export default function Feature2() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 600,
+        x: 300,
+        opacity: 0,
       },
       {
         x: 0,
-        duration: 0.5,
-        ease: 'none',
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '10% 80%',
-          end: '30% 40%',
+          start: '10% 90%',
+          end: '80% 50%',
           scrub: true,
           // markers: true,
         },
@@ -55,15 +57,12 @@ export default function Feature2() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
+      { y: 100, opacity: 0 },
       {
-        x: 50,
-        opacity: -2,
-      },
-      {
-        x: 0,
-        opacity: 3,
-        duration: 0.5,
-        ease: 'none',
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',

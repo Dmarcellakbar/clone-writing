@@ -42,7 +42,7 @@ export default function Sidelist() {
               <input
                 type="search"
                 name="search"
-                className="focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500 block w-full pl-9 sm:text-sm border-gray-300 rounded-md"
+                className="focus:ring-indigo-500 focus:ring-1 focus:border-indigo-500 block w-full pl-9 py-2 sm:text-sm border-2 border-gray-300 rounded-md"
                 placeholder="Search..."
                 data-np-intersection-state="visible"
               />

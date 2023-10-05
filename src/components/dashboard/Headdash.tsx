@@ -6,7 +6,7 @@ export default function Headdash() {
     <>
       <nav className="header print:hidden w-full" style={{ zoom: '0.7' }}>
         <div className="header-container relative flex w-full bg-slate-100">
-          <div className="flex w-full items-center justify-between py-4">
+          <div className="flex w-full items-start justify-between py-4 text-left">
             <div className="flex gap-5 pl-4">
               <div className="flex flex-col">
                 <h1 className="flex gap-x-3 text-base font-medium text-gray-900">

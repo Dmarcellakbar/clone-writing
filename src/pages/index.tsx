@@ -6,13 +6,13 @@ import Script from 'next/script';
 import Link from 'next/link';
 import Loading from '@/components/Loading';
 
-const Navbar = lazy(() => import('../components/Navbar'));
+const Navbar = lazy(() => import('@/components/Navbar'));
 const Hero = lazy(() => import('@/components/section/Hero'));
 const Features = lazy(() => import('@/components/section/Features'));
 const Pricing = lazy(() => import('@/components/section/Pricing'));
-const Write = lazy(() => import('../components/Writing'));
+const Write = lazy(() => import('@/components/Writing'));
 const Faq = lazy(() => import('@/components/section/Faq'));
-const Footer = lazy(() => import('../components/Footer'));
+const Footer = lazy(() => import('@/components/Footer'));
 
 // import Tawk from '@/components/TawkToChat';
 const Home: NextPage = () => {

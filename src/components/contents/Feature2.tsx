@@ -22,7 +22,7 @@ export default function Feature2() {
       {
         y: 0,
         opacity: 1,
-        duration: 30,
+        duration: 1,
         ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
@@ -37,18 +37,18 @@ export default function Feature2() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 600,
+        x: 300,
         opacity: 0,
       },
       {
         x: 0,
         opacity: 1,
-        duration: 100,
+        duration: 1,
         ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
-          end: '55% 40%',
+          end: '50% 10%',
           scrub: true,
           // markers: true,
         },
@@ -57,12 +57,12 @@ export default function Feature2() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: -100, opacity: -2 },
+      { y: 100, opacity: 0 },
       {
         y: 0,
-        opacity: 3,
-        duration: 0.8,
-        ease: 'none',
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',

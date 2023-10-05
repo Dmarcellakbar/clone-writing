@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { lazy } from 'react';
 
-import Feature1 from '@/components/contents/Feature1';
-import Feature2 from '@/components/contents/Feature2';
-import Feature3 from '@/components/contents/Feature3';
-import Feature4 from '@/components/contents/Feature4';
-import Feature5 from '@/components/contents/Feature5';
-import Navbar from '@/components/Navbar';
+const Feature1 = lazy(() => import('@/components/contents/Feature1'));
+const Feature2 = lazy(() => import('@/components/contents/Feature2'));
+const Feature3 = lazy(() => import('@/components/contents/Feature3'));
+const Feature4 = lazy(() => import('@/components/contents/Feature4'));
+const Feature5 = lazy(() => import('@/components/contents/Feature5'));
 
 function Feature() {
   return (

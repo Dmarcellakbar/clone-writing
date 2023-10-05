@@ -15,10 +15,12 @@ export default function Feature1() {
       sectionRefText.current,
       {
         opacity: 0,
+        y: -100,
       },
       {
         opacity: 1,
-        duration: 30,
+        y: 0,
+        duration: 1,
         ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,

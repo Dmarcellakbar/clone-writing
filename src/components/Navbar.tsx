@@ -43,11 +43,21 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
         <div className="hidden lg:flex items-end space-x-2 ">
           <Link href={link5To}>
-            <button className="   font-bold py-2 px-4 rounded-full border border-indigo-500">
-              <span className="leading-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500 w-full">
-                {link5}
-              </span>
-            </button>
+            <div
+              style={{
+                paddingTop: '1px',
+                paddingBottom: '1px',
+                paddingLeft: '1px',
+                paddingRight: '1px',
+              }}
+              className="w-fit h-fit cursor-pointer text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+            >
+              <div className="bg-white rounded-full px-5 py-[7px]">
+                <span className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">
+                  {link5}
+                </span>
+              </div>
+            </div>
           </Link>
           <Link href={link6To}>
             <button className="  text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
@@ -85,9 +95,21 @@ const Navbar: React.FC<NavbarProps> = ({
           <Link href={link3To}>{link3}</Link>
           <Link href={link4To}>{link4}</Link>
           <Link href={link5To}>
-            <button className=" hover:bg-blue-700 hover:border-transparent hover:text-white text-indigo-500 font-bold py-2 px-4 rounded-full bg-white border border-indigo-500">
-              {link5}
-            </button>
+            <div
+              style={{
+                paddingTop: '1px',
+                paddingBottom: '1px',
+                paddingLeft: '1px',
+                paddingRight: '1px',
+              }}
+              className="w-fit h-fit cursor-pointer text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+            >
+              <div className="bg-white rounded-full px-5 py-[7px]">
+                <span className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">
+                  {link5}
+                </span>
+              </div>
+            </div>
           </Link>
           <Link href={link6To}>
             <button className=" hover:bg-gradient-to-tl  hover:text-yellow-300 text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">

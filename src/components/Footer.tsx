@@ -14,8 +14,8 @@ export default function Footer() {
             </Link>
           </div>
           <div className="md:flex md:justify-between">
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div className="mr-32">
+            <div className="grid grid-cols-2 gap-10 sm:gap-6 sm:grid-cols-3">
+              <div className="lg:mr-44 mr-32">
                 <h2 className="mb-6 text-md font-semibold text-gray-50  ">
                   Solutions
                 </h2>
@@ -62,7 +62,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <hr className="my-6 border-gray-400 border-2 sm:mx-auto  lg:my-8" />
+          <hr className="my-6 border-gray-300 border-1 sm:mx-auto  lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-md text-gray-50 sm:text-center ">
               © 2023 AI Writing Improvement INC, Inc. All rights reserved.

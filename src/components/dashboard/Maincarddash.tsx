@@ -3,7 +3,7 @@ import React from 'react';
 export default function Maincarddash() {
   return (
     <>
-      <div className="grid px-4 py-2 grid-cols-2 gap-2 lg:grid-cols-4 text-black">
+      <div className="grid px-4 py-2 grid-cols-2 gap-2 lg:grid-cols-4 text-black text-left">
         <div
           className="bg-white rounded-md shadow hover:shadow-lg cursor-pointer"
           style={{
