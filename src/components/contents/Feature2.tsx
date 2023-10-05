@@ -16,7 +16,7 @@ export default function Feature2() {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -150,
+        y: -100,
         opacity: 0,
       },
       {
@@ -37,7 +37,7 @@ export default function Feature2() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 300,
+        x: 250,
         opacity: 0,
       },
       {
@@ -136,14 +136,14 @@ export default function Feature2() {
           ref={sectionRefImage}
           className="absolute w-0 lg:w-fit right-0 top-0"
         >
-          <Image src={imgF2} alt={'img'} width={600} />
+          <Image src={imgF2} alt={'img'} width={600} quality={60} />
         </div>
 
         <div
           ref={sectionRefImageMobile}
           className="absolute w-0 md:w-fit lg:w-0 right-0 top-0 z-0"
         >
-          <Image src={imgF2} alt={'img'} width={400} />
+          <Image src={imgF2} alt={'img'} width={400} quality={60} />
         </div>
       </div>
     </section>
