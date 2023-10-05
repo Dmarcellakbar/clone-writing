@@ -27,7 +27,7 @@ export default function Home() {
                   <TextArea />
 
                   <div className="pt-8 flex justify-center">
-                    <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                       <span className="mr-4 align-middle">
                         Sign Up for <b>FREE</b>
                       </span>

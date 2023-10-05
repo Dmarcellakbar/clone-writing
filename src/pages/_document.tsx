@@ -38,7 +38,7 @@ export default function Document() {
           writing process with Writing Hero&#039;s comprehensive suite 
           of tools, designed to help your business thrive."
         />
-        <meta property="og:image" content="/robohead2.png" />
+        <meta property="og:image" content="/headrobo.svg" />
         <meta
           property="og:url"
           content="https://www.facebook.com/WritingHeroAI/"

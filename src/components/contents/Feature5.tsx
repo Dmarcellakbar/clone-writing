@@ -105,7 +105,7 @@ export default function Feature5() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-3  px-6  text-white font-bold text-md  rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
+                  <button className="py-3  px-6  text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                     <span className="mr-4 align-middle">
                       Give it a try now!
                     </span>
