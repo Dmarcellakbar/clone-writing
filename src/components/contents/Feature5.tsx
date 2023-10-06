@@ -16,7 +16,7 @@ export default function Feature5() {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -100,
+        y: -80,
         opacity: 0,
       },
       {
@@ -37,7 +37,7 @@ export default function Feature5() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 250,
+        x: 200,
         opacity: 0,
       },
       {
@@ -47,8 +47,8 @@ export default function Feature5() {
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '10% 80%',
-          end: '70% 40%',
+          start: 'top 80%',
+          end: '50% 10%',
           scrub: true,
           // markers: true,
         },
@@ -57,7 +57,7 @@ export default function Feature5() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: 100, opacity: 0 },
+      { y: 80, opacity: 0 },
       {
         y: 0,
         opacity: 1,

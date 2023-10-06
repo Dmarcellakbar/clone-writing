@@ -15,7 +15,7 @@ export default function Feature1() {
       sectionRefText.current,
       {
         opacity: 0,
-        y: -100,
+        y: -80,
       },
       {
         opacity: 1,
