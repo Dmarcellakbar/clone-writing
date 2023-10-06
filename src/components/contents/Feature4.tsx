@@ -81,10 +81,10 @@ export default function Feature4() {
 
   return (
     <section>
-      <div className="relative  blue" style={{ height: '110vh' }}>
+      <div className="relative  blue  h-auto md:h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative z-10 h-full flex items-center  "
+          className="relative py-20 z-10 h-full flex items-center  "
         >
           <div className="lg:pl-52">
             <div className=" container mx-auto">

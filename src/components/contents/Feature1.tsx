@@ -38,15 +38,15 @@ export default function Feature1() {
 
   return (
     <section>
-      <div className="relative bg-green-500" style={{ height: '100vh' }}>
+      <div className="relative bg-green-500 h-auto md:h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="h-full pt-10 flex items-center justify-center bg-gradient-to-r from-purple-600 from-60% to-pink-400 to-100% bg-opacity-50 "
+          className="h-full py-20 flex items-center justify-center bg-gradient-to-r from-purple-600 from-60% to-pink-400 to-100% bg-opacity-50 "
         >
           <div ref={sectionRefText} className="text-center">
             <div className="container px-4 mx-auto">
               <div className="max-w-4xl mx-auto text-center">
-                <div className=" max-w-5xl mx-auto text-4xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl mx-auto text-3xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">
                     The Tone of Voice establishes
                   </span>
@@ -54,11 +54,11 @@ export default function Feature1() {
                     <Image src={textline} alt={''} width={500} />
                   </div>
                 </div>
-                <div className=" max-w-5xl mx-auto mb-6 text-4xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl mx-auto mb-6 text-3xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">your brand.</span>
                 </div>
 
-                <p className="max-w-3xl mx-auto mb-10 text-xl text-gray-300">
+                <p className="max-w-3xl mx-auto mb-10 text-md lg:text-xl text-gray-300">
                   Whether you project confidence, playfulness, formality, or
                   exclusively use online language, <b>WritingHero.AI</b>{' '}
                   assimilates into brand voice to help you stay <br />
