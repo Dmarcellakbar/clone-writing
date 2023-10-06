@@ -69,7 +69,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Favorites
                   </span>
                 </div>
@@ -102,7 +102,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Advertisements
                   </span>
                 </div>
@@ -135,7 +135,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Blog Posts
                   </span>
                 </div>
@@ -168,7 +168,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Business Tools
                   </span>
                 </div>
@@ -201,7 +201,9 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">Email</span>
+                  <span className="text-sm font-semibold truncate text-black">
+                    Email
+                  </span>
                 </div>
               </div>
             </div>
@@ -232,7 +234,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Marketing
                   </span>
                 </div>
@@ -265,7 +267,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Non-Business
                   </span>
                 </div>
@@ -298,7 +300,9 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">SEO</span>
+                  <span className="text-sm font-semibold truncate text-black">
+                    SEO
+                  </span>
                 </div>
               </div>
             </div>
@@ -329,7 +333,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Social Media
                   </span>
                 </div>
@@ -362,7 +366,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Website
                   </span>
                 </div>
@@ -395,7 +399,7 @@ export default function Sidelist() {
                   </svg>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <span className="text-sm font-semibold truncate">
+                  <span className="text-sm font-semibold truncate text-black">
                     Writing
                   </span>
                 </div>
