@@ -5,7 +5,7 @@ export default function Sidedash() {
   return (
     <>
       <div className="sidebar hidden md:block lg:block">
-        <div className="sidebar-main bg-slate-100" style={{ zoom: '0.7' }}>
+        <div className="sidebar-main bg-slate-100">
           <div className="flex h-full w-full flex-col items-center border-r">
             <div className="flex pt-4">
               <div>
@@ -134,7 +134,7 @@ export default function Sidedash() {
                 </div>
               </div>
             </div>
-            <div className="flex pt-52 flex-col items-center space-y-3">
+            <div className="flex pt-48 lg:pt-52 flex-col items-center space-y-3">
               <div>
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg outline-none transition-colors duration-200 text-indigo-600 hover:text-indigo-700">
                   <svg

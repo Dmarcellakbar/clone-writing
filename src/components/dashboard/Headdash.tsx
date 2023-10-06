@@ -4,7 +4,7 @@ import Maindash from './Maindash';
 export default function Headdash() {
   return (
     <>
-      <nav className="header print:hidden w-full" style={{ zoom: '0.7' }}>
+      <nav className="header print:hidden w-full ">
         <div className="header-container relative flex w-full bg-slate-100">
           <div className="flex w-full items-start justify-between py-4 text-left">
             <div className="flex gap-5 pl-4">

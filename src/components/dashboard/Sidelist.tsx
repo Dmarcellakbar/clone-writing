@@ -3,7 +3,7 @@ import React from 'react';
 export default function Sidelist() {
   return (
     <>
-      <div className="sidebar-panel bg-slate-100" style={{ zoom: '0.7' }}>
+      <div className="sidebar-panel bg-slate-100">
         <div className="flex h-full grow flex-col pl-[var(--main-sidebar-width)]">
           <div className="flex h-16 w-full items-center justify-between pl-4 pr-1">
             <div className="flex items-center">

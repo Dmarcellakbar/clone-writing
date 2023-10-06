@@ -7,7 +7,7 @@ export default function DashScroll() {
     <>
       <div
         id="headerdemo"
-        className="relative overflow-hidden flex grow h-[500px] w-full lg:w-[800px] p-1 rounded-lg bg-slate-100 shadow-lg is-sidebar-open"
+        className="relative overflow-hidden flex grow h-full w-full  p-1 rounded-lg bg-slate-100 shadow-lg is-sidebar-open"
       >
         <Sidedash />
 

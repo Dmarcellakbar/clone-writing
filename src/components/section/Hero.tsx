@@ -14,8 +14,8 @@ export default function Home() {
           <div className="flex items-center justify-center bg-gray-50 py-12">
             <div className="text-center">
               <div className="container px-4 mx-auto pb-10">
-                <div className="max-w-4xl mx-auto text-center">
-                  <div className=" mt-8 mb-6 text-3xl px-4 lg:px-20 lg:text-6xl font-extrabold  ">
+                <div className="max-w-5xl mx-auto text-center">
+                  <div className=" mt-8 max-w-4xl mx-auto mb-6  text-3xl px-4 lg:px-20 lg:text-5xl font-extrabold  ">
                     <span className="text-black leading-tight">
                       Powerful AI writing tools to boost your
                     </span>
@@ -26,7 +26,7 @@ export default function Home() {
                   </div>
                   <TextArea />
 
-                  <div className="pt-8 flex justify-center">
+                  <div className="pt-8 max-w-4xl mx-auto flex justify-center">
                     <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                       <span className="mr-4 align-middle">
                         Sign Up for <b>FREE</b>
@@ -64,7 +64,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="bg-white mt-20  pb-6 px-2 rounded-t-3xl lg:rounded-t-full  border-t border-gray-200">
+                  <div className="bg-white  mt-20  pb-6 px-2 rounded-t-3xl lg:rounded-t-full  border-t border-gray-200">
                     <h2 className="text-2xl pt-10 lg:px-20 lg:text-4xl font-extrabold ">
                       <span className="text-black leading-tight">
                         Over 100+ AI tools, a full document editor for long-form
@@ -72,7 +72,7 @@ export default function Home() {
                       </span>
                     </h2>
                   </div>
-                  <div className="bg-white rounded-b-3xl flex justify-center">
+                  <div className="bg-white rounded-b-3xl flex justify-center px-4">
                     <div className="bg-gradient-to-r from-purple-700 from-30% via-purple-500 via-80% to-pink-500 to-100% p-3 rounded-3xl lg:w-fit ">
                       <DashScroll />
                     </div>

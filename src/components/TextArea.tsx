@@ -17,7 +17,7 @@ export default function TextArea() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative max-w-4xl mx-auto">
       <div className="px-2 lg:px-32 ">
         <div className="w-full mb-4 border border-gray-300 rounded-lg bg-gray-200 ">
           <div className="px-4 py-2 bg-white rounded-t-lg ">
@@ -38,7 +38,7 @@ export default function TextArea() {
             </p>
           </div>
           <div className="flex items-center justify-between px-3 py-2 border-t border-gray-300">
-            <label className="text-black text-xs lg:text-sm">
+            <label className="text-black text-xs ">
               What tone of voice do you want it rewritten in?
             </label>
 
