@@ -315,7 +315,7 @@ const SignupFormPage = (): JSX.Element => {
                                 Firstname: evt.target.value,
                               }))
                             }
-                            className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           />
                           {errors.firstname && (
                             <ErrorPop message={errors.firstname} />
@@ -342,7 +342,7 @@ const SignupFormPage = (): JSX.Element => {
                                 Lastname: evt.target.value,
                               }))
                             }
-                            className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                            className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           />
                           {errors.lastname && (
                             <ErrorPop message={errors.lastname} />
@@ -370,7 +370,7 @@ const SignupFormPage = (): JSX.Element => {
                               Email: evt.target.value,
                             }))
                           }
-                          className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                         {errors.email && <ErrorPop message={errors.email} />}
                       </div>
@@ -506,7 +506,7 @@ const SignupFormPage = (): JSX.Element => {
                         >
                           First name
                         </label>
-                        <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
+                        <span className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
                           {signupForm.Firstname}
                         </span>
                       </div>
@@ -517,7 +517,7 @@ const SignupFormPage = (): JSX.Element => {
                         >
                           Last name
                         </label>
-                        <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
+                        <span className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
                           {signupForm.Lastname}
                         </span>
                       </div>
@@ -529,7 +529,7 @@ const SignupFormPage = (): JSX.Element => {
                       Email address
                     </label>
                     <div className="mt-1 mb-2">
-                      <span className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
+                      <span className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 bg-slate-200 focus:outline-none focus:ring-0 sm:text-sm">
                         {signupForm.Email}
                       </span>
                     </div>
@@ -550,7 +550,7 @@ const SignupFormPage = (): JSX.Element => {
                             Token: evt.target.value,
                           }))
                         }
-                        className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        className="appearance-none text-black block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                       />
                     </div>
                   </div>
