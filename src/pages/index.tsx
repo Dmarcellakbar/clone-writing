@@ -11,7 +11,7 @@ const Navbar = lazy(() => import('@/components/Navbar'));
 const Hero = lazy(() => import('@/components/section/Hero'));
 // const Features = lazy(() => import('@/components/section/Features'));
 const Pricing = lazy(() => import('@/components/section/Pricing'));
-const Write = lazy(() => import('@/components/Writing'));
+const Write = lazy(() => import('@/components/section/Writing'));
 const Faq = lazy(() => import('@/components/section/Faq'));
 const Footer = lazy(() => import('@/components/Footer'));
 const Features = dynamic(() => import('@/components/section/Features'));
