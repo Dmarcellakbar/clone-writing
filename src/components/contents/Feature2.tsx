@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import headRobo2 from '@/assets/img/headnormal.svg';
-import imgF2 from '@/assets/img/feat2.svg';
+import imgF2 from '@/assets/img/part2-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 
 export default function Feature2() {
   const sectionRefText = useRef(null);
@@ -12,12 +12,13 @@ export default function Feature2() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
         y: -80,
-        opacity: 0,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         y: 0,
@@ -28,7 +29,7 @@ export default function Feature2() {
           trigger: triggerRefDesktop.current,
           start: '5% 80%',
           end: '40% 20%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -37,8 +38,9 @@ export default function Feature2() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 200,
-        opacity: 0,
+        x: 190,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         x: 0,
@@ -49,7 +51,7 @@ export default function Feature2() {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '50% 10%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -57,7 +59,7 @@ export default function Feature2() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: 80, opacity: 0 },
+      { y: -80, opacity: 0.1, immediateRender: false },
       {
         y: 0,
         opacity: 1,
@@ -67,7 +69,7 @@ export default function Feature2() {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '20% 40%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -92,18 +94,18 @@ export default function Feature2() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-black">
+                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-gray-800">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
                 </div>
 
-                <p className=" max-w-xl  mb-2 text-sm lg:text-lg text-black">
+                <p className=" max-w-xl  mb-2 text-sm lg:text-lg text-gray-800">
                   Unlock the power of over 100 carefully crafted AI templates
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-lg  mb-2 text-sm lg:text-lg text-black">
+                <p className="max-w-lg  mb-2 text-sm lg:text-lg text-gray-800">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
@@ -132,6 +134,7 @@ export default function Feature2() {
             </div>
           </div>
         </div>
+
         <div
           ref={sectionRefImage}
           className="absolute w-0 lg:w-fit right-0 top-0"

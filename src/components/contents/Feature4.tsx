@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import headRobo2 from '@/assets/img/headnormal.svg';
-import imgF4 from '@/assets/img/feat4.svg';
+import imgF4 from '@/assets/img/part4-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 
 export default function Feature4() {
   const sectionRefText = useRef(null);
@@ -12,23 +12,24 @@ export default function Feature4() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -80,
-        opacity: 0,
+        y: -70,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '40% 10%',
-          scrub: true,
+          start: '5% 80%',
+          end: '40% 20%',
+          scrub: 1,
           // markers: true,
         },
       }
@@ -37,19 +38,20 @@ export default function Feature4() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 200,
-        opacity: 0,
+        x: 150,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         x: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '50% 10%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -57,17 +59,17 @@ export default function Feature4() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: 80, opacity: 0 },
+      { y: -80, opacity: 0.1, immediateRender: false },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power1.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '20% 40%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -92,7 +94,7 @@ export default function Feature4() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-2xl mb-6 text-3xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">Unique,</span>
                   <br />
                   <span className="leading-tight">PLAGIARISM FREE</span>

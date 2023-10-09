@@ -5,14 +5,16 @@ import React, { lazy, Suspense, useState, useRef } from 'react';
 import Script from 'next/script';
 import Link from 'next/link';
 import Loading from '@/components/Loading';
+import dynamic from 'next/dynamic';
 
 const Navbar = lazy(() => import('@/components/Navbar'));
 const Hero = lazy(() => import('@/components/section/Hero'));
-const Features = lazy(() => import('@/components/section/Features'));
+// const Features = lazy(() => import('@/components/section/Features'));
 const Pricing = lazy(() => import('@/components/section/Pricing'));
 const Write = lazy(() => import('@/components/Writing'));
 const Faq = lazy(() => import('@/components/section/Faq'));
 const Footer = lazy(() => import('@/components/Footer'));
+const Features = dynamic(() => import('@/components/section/Features'));
 
 // import Tawk from '@/components/TawkToChat';
 const Home: NextPage = () => {

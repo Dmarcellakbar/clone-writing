@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import headRobo2 from '@/assets/img/headnormal.svg';
-import imgF3 from '@/assets/img/feat3.svg';
+import imgF3 from '@/assets/img/part3-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 
 export default function Feature3() {
   const sectionRefText = useRef(null);
@@ -12,23 +12,24 @@ export default function Feature3() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
         y: -80,
-        opacity: 0,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '50% 10%',
-          scrub: true,
+          start: '5% 80%',
+          end: '40% 20%',
+          scrub: 1,
           // markers: true,
         },
       }
@@ -37,19 +38,20 @@ export default function Feature3() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 200,
-        opacity: 0,
+        x: 190,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         x: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: '10% 90%',
           end: '80% 50%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -57,17 +59,17 @@ export default function Feature3() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: 80, opacity: 0 },
+      { y: -80, opacity: 0.1, immediateRender: false },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power1.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '20% 40%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }

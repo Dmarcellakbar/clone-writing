@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import headRobo from '@/assets/img/headwhite.svg';
-import imgF5 from '@/assets/img/feat5.svg';
+import imgF5 from '@/assets/img/part5-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 
 export default function Feature5() {
   const sectionRefText = useRef(null);
@@ -12,23 +12,24 @@ export default function Feature5() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -80,
-        opacity: 0,
+        y: -70,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '40% 10%',
-          scrub: true,
+          start: '5% 80%',
+          end: '40% 20%',
+          scrub: 1,
           // markers: true,
         },
       }
@@ -37,19 +38,20 @@ export default function Feature5() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 200,
-        opacity: 0,
+        x: 150,
+        opacity: 0.1,
+        immediateRender: false,
       },
       {
         x: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '50% 10%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -57,17 +59,17 @@ export default function Feature5() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: 80, opacity: 0 },
+      { y: -80, opacity: 0.1, immediateRender: false },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power1.inOut',
+        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
           end: '20% 40%',
-          scrub: true,
+          scrub: 1,
           // markers: true,
         },
       }
@@ -92,13 +94,13 @@ export default function Feature5() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-2xl mb-6 text-3xl lg:text-6xl font-bold text-black">
+                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-gray-800">
                   <span className="leading-tight">Supercharge</span>
                   <br />
                   <span className="leading-tight">Team Productivity</span>
                 </div>
 
-                <p className=" max-w-xl  mb-2 text-sm lg:text-md text-black">
+                <p className=" max-w-xl  mb-2 text-sm lg:text-md text-gray-800">
                   Collaborate seamlessly with your team using Writing Hero!
                   Unlock the power of unlimited projects and documents, enabling
                   smooth sharing and elevated writing productivity.

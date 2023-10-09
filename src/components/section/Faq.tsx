@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Pricing() {
+export default function Faq() {
   return (
     <div id="#section4">
       <section className="bg-gray-50 relative">

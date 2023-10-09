@@ -1,20 +1,20 @@
-import React, { lazy } from 'react';
+import dynamic from 'next/dynamic';
 
-const Feature1 = lazy(() => import('@/components/contents/Feature1'));
-const Feature2 = lazy(() => import('@/components/contents/Feature2'));
-const Feature3 = lazy(() => import('@/components/contents/Feature3'));
-const Feature4 = lazy(() => import('@/components/contents/Feature4'));
-const Feature5 = lazy(() => import('@/components/contents/Feature5'));
+const Feature1 = dynamic(() => import('../contents/Feature1'));
+const Feature2 = dynamic(() => import('../contents/Feature2'));
+const Feature3 = dynamic(() => import('../contents/Feature3'));
+const Feature4 = dynamic(() => import('../contents/Feature4'));
+const Feature5 = dynamic(() => import('../contents/Feature5'));
 
 function Feature() {
   return (
-    <div id="#section2">
+    <>
       <Feature1 />
       <Feature2 />
       <Feature3 />
       <Feature4 />
       <Feature5 />
-    </div>
+    </>
   );
 }
 
