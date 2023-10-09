@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({
   link6To,
 }) => {
   return (
-    <div className="py-5 sticky z-50  top-0 flex-col items-between space-y-9 bg-white px-24 mx-2 md:mx-5 lg:mx-40 text-black rounded-b-3xl lg:rounded-b-full border-x border-b border-gray-200 shadow-lg">
+    <div className="py-2 lg:py-5 px-5 lg:px-24 sticky z-50  top-0 flex-col items-between space-y-9 bg-white  mx-2 md:mx-5 lg:mx-40 text-black rounded-b-3xl lg:rounded-b-full border-x border-b border-gray-200 shadow-lg">
       <nav className="flex items-center justify-between ">
         <Logo />
 
