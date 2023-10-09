@@ -3,7 +3,7 @@ import headRobo2 from '@/assets/img/headnormal.svg';
 import imgF4 from '@/assets/img/part4-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function Feature4() {
   const sectionRefText = useRef(null);
@@ -12,24 +12,23 @@ export default function Feature4() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -70,
-        opacity: 0.1,
-        immediateRender: false,
+        y: -150,
+        opacity: -2,
       },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '5% 80%',
-          end: '40% 20%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
+          toggleActions: 'play reverse play reverse',
           // markers: true,
         },
       }
@@ -38,38 +37,36 @@ export default function Feature4() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 150,
-        opacity: 0.1,
+        x: 600,
         immediateRender: false,
       },
       {
         x: 0,
-        opacity: 1,
         duration: 1,
-        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '50% 10%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
           // markers: true,
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: -80, opacity: 0.1, immediateRender: false },
+      { y: -70, opacity: -2, immediateRender: false },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '20% 40%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
+          toggleActions: 'play reverse play reverse',
           // markers: true,
         },
       }
@@ -131,7 +128,8 @@ export default function Feature4() {
           ref={sectionRefImage}
           className="absolute w-0 lg:w-fit right-0 top-40"
         >
-          <Image src={imgF4} alt={'img'} width={600} quality={60} />
+          {/* <div className={`bg-[url('../assets/img/feat4.svg')]`}></div> */}
+          <Image src={imgF4} alt={'img'} width={500} />
         </div>
 
         <div

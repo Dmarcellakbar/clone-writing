@@ -16,20 +16,19 @@ export default function Feature5() {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -70,
-        opacity: 0.1,
-        immediateRender: false,
+        y: -150,
+        opacity: -2,
       },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '5% 80%',
-          end: '40% 20%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
+          toggleActions: 'play reverse play reverse',
           // markers: true,
         },
       }
@@ -38,38 +37,36 @@ export default function Feature5() {
     const pinImage = gsap.fromTo(
       sectionRefImage.current,
       {
-        x: 150,
-        opacity: 0.1,
+        x: 600,
         immediateRender: false,
       },
       {
         x: 0,
-        opacity: 1,
         duration: 1,
-        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '50% 10%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
           // markers: true,
+          toggleActions: 'play reverse play reverse',
         },
       }
     );
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: -80, opacity: 0.1, immediateRender: false },
+      { y: -70, opacity: -2, immediateRender: false },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'none',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '20% 40%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
+          toggleActions: 'play reverse play reverse',
           // markers: true,
         },
       }

@@ -14,20 +14,19 @@ export default function Feature1() {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        opacity: 0,
-        y: -80,
-        immediateRender: false,
+        y: -150,
+        opacity: -2,
       },
       {
-        opacity: 1,
         y: 0,
+        opacity: 1,
         duration: 1,
-        ease: 'power1.inOut',
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: '20% 50%',
-          scrub: 1,
+          start: 'top center',
+          end: '80% center',
+          scrub: false,
+          toggleActions: 'play reverse play reverse',
           // markers: true,
         },
       }
