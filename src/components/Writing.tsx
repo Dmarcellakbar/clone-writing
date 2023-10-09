@@ -5,6 +5,7 @@ import Card2 from '@/assets/img/writing-2.svg';
 import Card3 from '@/assets/img/writing-3.svg';
 import headRobo from '@/assets/img/headwhite.svg';
 import ImgLogo from '../../public/logowide.svg';
+import Link from 'next/link';
 
 export default function Pricing() {
   return (
@@ -82,12 +83,14 @@ export default function Pricing() {
             </div>
           </div>
           <div className=" text-center pt-6">
-            <button className="text-sm py-3  px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-              <span className="mr-4 align-middle">
-                Give it a try <b>NOW!</b>
-              </span>
-              <Image src={headRobo} alt={''} width={25} className="inline" />
-            </button>
+            <Link href={'/account/signup'}>
+              <button className="text-sm py-3  px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <span className="mr-4 align-middle">
+                  Give it a try <b>NOW!</b>
+                </span>
+                <Image src={headRobo} alt={''} width={25} className="inline" />
+              </button>
+            </Link>
           </div>
         </div>
       </section>

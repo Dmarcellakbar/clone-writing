@@ -5,6 +5,7 @@ import objRight from '@/assets/img/rightdot.svg';
 import headRobo from '@/assets/img/headwhite.svg';
 import Dash from '@/assets/img/screenwriting.svg';
 import DashScroll from '../dashboard/DashScroll';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -27,17 +28,19 @@ export default function Home() {
                   <TextArea />
 
                   <div className="pt-8 max-w-4xl mx-auto flex justify-center">
-                    <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
-                      <span className="mr-4 align-middle">
-                        Sign Up for <b>FREE</b>
-                      </span>
-                      <Image
-                        src={headRobo}
-                        alt={''}
-                        width={25}
-                        className="inline"
-                      />
-                    </button>
+                    <Link href={'/account/signup'}>
+                      <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+                        <span className="mr-4 align-middle">
+                          Sign Up for <b>FREE</b>
+                        </span>
+                        <Image
+                          src={headRobo}
+                          alt={''}
+                          width={25}
+                          className="inline"
+                        />
+                      </button>
+                    </Link>
 
                     {/* <button className="text-sm py-3  px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                       <div className="bg-white rounded-full sticky top-0">

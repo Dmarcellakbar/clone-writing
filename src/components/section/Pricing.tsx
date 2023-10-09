@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import objLeft from '@/assets/img/leftdot.svg';
 import objRight from '@/assets/img/rightdot.svg';
+import Link from 'next/link';
 
 export default function Pricing() {
   return (
@@ -39,9 +40,11 @@ export default function Pricing() {
                 boost your productivity.
               </p>
 
-              <button className="text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                <span className="mr-4 align-middle">Select Package</span>
-              </button>
+              <Link href={'/account/signup'}>
+                <button className="w-full text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <span className="align-middle">Select Package</span>
+                </button>
+              </Link>
 
               {/* <!-- List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -181,9 +184,11 @@ export default function Pricing() {
                 fuel your wildest writing ambitions.
               </p>
 
-              <button className="text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                <span className="mr-4 align-middle">Select Package</span>
-              </button>
+              <Link href={'/account/signup'}>
+                <button className="w-full text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <span className="align-middle">Select Package</span>
+                </button>
+              </Link>
 
               {/* <!-- List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -321,9 +326,11 @@ export default function Pricing() {
                 journey.
               </p>
 
-              <button className="text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                <span className="mr-4 align-middle">Select Package</span>
-              </button>
+              <Link href={'/account/signup'}>
+                <button className="w-full text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  <span className="align-middle">Select Package</span>
+                </button>
+              </Link>
 
               {/* <!-- List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">

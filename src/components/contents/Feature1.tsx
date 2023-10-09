@@ -4,6 +4,7 @@ import textline from '@/assets/img/textline.png';
 import { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Link from 'next/link';
 
 export default function Feature1() {
   const sectionRefText = useRef(null);
@@ -66,17 +67,19 @@ export default function Feature1() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-3  px-6  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
-                    <span className="mr-4 align-middle">
-                      Give it a try now!
-                    </span>
-                    <Image
-                      src={headRobo2}
-                      alt={''}
-                      width={25}
-                      className="inline"
-                    />
-                  </button>
+                  <Link href={'/account/signup'}>
+                    <button className="py-3  px-6  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                      <span className="mr-4 align-middle">
+                        Give it a try now!
+                      </span>
+                      <Image
+                        src={headRobo2}
+                        alt={''}
+                        width={25}
+                        className="inline"
+                      />
+                    </button>
+                  </Link>
                   <button className=" lg:ml-4 lg:mt-0 mt-4 py-3  px-6  text-white text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Learn More about Brand Voice

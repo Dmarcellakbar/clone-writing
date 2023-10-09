@@ -4,6 +4,7 @@ import imgF2 from '@/assets/img/part2-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useLayoutEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Feature2() {
   const sectionRefText = useRef(null);
@@ -110,17 +111,19 @@ export default function Feature2() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
-                    <span className="mr-3 align-middle">
-                      Give it a try now!
-                    </span>
-                    <Image
-                      src={headRobo2}
-                      alt={''}
-                      width={25}
-                      className="inline"
-                    />
-                  </button>
+                  <Link href={'/account/signup'}>
+                    <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                      <span className="mr-3 align-middle">
+                        Give it a try now!
+                      </span>
+                      <Image
+                        src={headRobo2}
+                        alt={''}
+                        width={25}
+                        className="inline"
+                      />
+                    </button>
+                  </Link>
                   <button className=" lg:ml-2 md:ml-4 lg:mt-0 md:mt-0 mt-4 py-2  px-4  text-white text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Create your own Custom AI Tool!

@@ -4,6 +4,7 @@ import imgF5 from '@/assets/img/part5-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useLayoutEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Feature5() {
   const sectionRefText = useRef(null);
@@ -104,17 +105,19 @@ export default function Feature5() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-3  px-6  text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
-                    <span className="mr-4 align-middle">
-                      Give it a try now!
-                    </span>
-                    <Image
-                      src={headRobo}
-                      alt={''}
-                      width={25}
-                      className="inline"
-                    />
-                  </button>
+                  <Link href={'/account/signup'}>
+                    <button className="py-3  px-6  text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+                      <span className="mr-4 align-middle">
+                        Give it a try now!
+                      </span>
+                      <Image
+                        src={headRobo}
+                        alt={''}
+                        width={25}
+                        className="inline"
+                      />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

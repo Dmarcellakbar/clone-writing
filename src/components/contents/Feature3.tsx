@@ -4,6 +4,7 @@ import imgF3 from '@/assets/img/part3-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useLayoutEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Feature3() {
   const sectionRefText = useRef(null);
@@ -107,17 +108,19 @@ export default function Feature3() {
                 </p>
 
                 <div className="pt-4 ">
-                  <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
-                    <span className="mr-3 align-middle">
-                      Give it a try now!
-                    </span>
-                    <Image
-                      src={headRobo2}
-                      alt={''}
-                      width={25}
-                      className="inline"
-                    />
-                  </button>
+                  <Link href={'/account/signup'}>
+                    <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                      <span className="mr-3 align-middle">
+                        Give it a try now!
+                      </span>
+                      <Image
+                        src={headRobo2}
+                        alt={''}
+                        width={25}
+                        className="inline"
+                      />
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
