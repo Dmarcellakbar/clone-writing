@@ -132,7 +132,7 @@ export default function Feature5() {
 
         <div
           ref={sectionRefImageMobile}
-          className="absolute w-0 md:w-fit lg:w-0 right-10 top-40 z-0"
+          className="absolute w-0 md:w-fit lg:w-0 right-10 top-28 z-0"
         >
           <Image src={imgF5} alt={'img'} width={300} quality={60} />
         </div>

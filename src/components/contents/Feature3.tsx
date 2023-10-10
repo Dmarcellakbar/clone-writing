@@ -135,7 +135,7 @@ export default function Feature3() {
 
         <div
           ref={sectionRefImageMobile}
-          className="absolute w-0 md:w-fit lg:w-0 right-10 top-52 z-0"
+          className="absolute w-0 md:w-fit lg:w-0 right-10 top-40 z-0"
         >
           <Image src={imgF3} alt={'img'} width={400} quality={60} />
         </div>
