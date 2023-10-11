@@ -75,8 +75,8 @@ export default function Feature2() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: 'bottom 80%',
+          start: 'top center',
+          end: '200% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,

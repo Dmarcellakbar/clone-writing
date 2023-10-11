@@ -75,8 +75,8 @@ export default function Feature4() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: 'bottom 80%',
+          start: 'top center',
+          end: '200% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -104,7 +104,7 @@ export default function Feature4() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-xl mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">Unique,</span>
                   <br />
                   <span className="leading-tight">PLAGIARISM FREE</span>
@@ -112,7 +112,7 @@ export default function Feature4() {
                   <span className="leading-tight">content</span>
                 </div>
 
-                <p className=" max-w-xl  mb-2 text-sm lg:text-md text-white">
+                <p className=" max-w-xl  mb-2 text-sm md:text-md lg:text-md text-white">
                   Accuracy and speed? Get the best of both worlds with quick and
                   accurate AI-generated content that’s virtually 100%
                   plagiarism-free! With the option to generate up to 5 different

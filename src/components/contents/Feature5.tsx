@@ -75,8 +75,8 @@ export default function Feature5() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: 'bottom 80%',
+          start: 'top center',
+          end: '200% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -104,13 +104,13 @@ export default function Feature5() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-xl mb-6 text-3xl lg:text-6xl font-bold text-gray-800">
+                <div className=" max-w-xl mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800">
                   <span className="leading-tight">Supercharge</span>
                   <br />
                   <span className="leading-tight">Team Productivity</span>
                 </div>
 
-                <p className=" max-w-xl  mb-2 text-sm lg:text-md text-gray-800">
+                <p className=" max-w-xl  mb-2 text-sm md:text-md lg:text-md text-gray-800">
                   Collaborate seamlessly with your team using Writing Hero!
                   Unlock the power of unlimited projects and documents, enabling
                   smooth sharing and elevated writing productivity.

@@ -75,8 +75,8 @@ export default function Feature3() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: 'bottom 80%',
+          start: 'top center',
+          end: '200% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -103,13 +103,13 @@ export default function Feature3() {
                 ref={sectionRefText}
                 className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-2xl mb-6 text-3xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-2xl mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">A FULL-FEATURED</span>
                   <br />
                   <span className="leading-tight">document editor</span>
                 </div>
 
-                <p className=" max-w-lg  mb-2 text-sm lg:text-md text-white">
+                <p className=" max-w-lg  mb-2 text-sm md:text-md lg:text-md text-white">
                   A full editor, so you can create and share projects and
                   documents with your team - quickly and easily. Plus, an
                   easy-to-use adjustment panel makes working with existing or
@@ -146,7 +146,7 @@ export default function Feature3() {
 
         <div
           ref={sectionRefImageMobile}
-          className="absolute w-0 md:w-fit lg:w-0 right-10 top-40 z-0"
+          className="absolute w-0 md:w-fit lg:w-0 right-10 top-24 z-0"
         >
           <Image src={imgF3} alt={'img'} width={400} loading="lazy" />
         </div>

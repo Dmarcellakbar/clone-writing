@@ -61,7 +61,7 @@ export default function Feature1() {
           <div ref={sectionRefText} className="text-center">
             <div className="container px-4 mx-auto">
               <div className="max-w-4xl mx-auto text-center">
-                <div className=" max-w-5xl mx-auto text-3xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl mx-auto text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">
                     The Tone of Voice establishes
                   </span>
@@ -69,11 +69,11 @@ export default function Feature1() {
                     <Image src={textline} alt={''} width={500} />
                   </div>
                 </div>
-                <div className=" max-w-5xl mx-auto mb-6 text-3xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl mx-auto mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">your brand.</span>
                 </div>
 
-                <p className="max-w-3xl mx-auto mb-10 text-md lg:text-xl text-gray-300">
+                <p className="max-w-3xl mx-auto mb-10 text-md md:text-xl lg:text-xl text-gray-300">
                   Whether you project confidence, playfulness, formality, or
                   exclusively use online language, <b>WritingHero.AI</b>{' '}
                   assimilates into brand voice to help you stay <br />
