@@ -86,7 +86,7 @@ export default function Feature5() {
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-52">
+          <div className="lg:pl-40">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
@@ -125,16 +125,16 @@ export default function Feature5() {
         </div>
         <div
           ref={sectionRefImage}
-          className="absolute w-0 lg:w-fit right-20 top-40"
+          className="absolute w-0 lg:w-fit right-10 top-32"
         >
-          <Image src={imgF5} alt={'img'} width={400} quality={60} />
+          <Image src={imgF5} alt={'img'} width={400} loading="lazy" />
         </div>
 
         <div
           ref={sectionRefImageMobile}
           className="absolute w-0 md:w-fit lg:w-0 right-10 top-28 z-0"
         >
-          <Image src={imgF5} alt={'img'} width={300} quality={60} />
+          <Image src={imgF5} alt={'img'} width={300} loading="lazy" />
         </div>
       </div>
     </section>

@@ -120,3 +120,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(rgb(214, 0, 125), rgb(96, 1, 163));
 }
+
+.panel {
+  height: 100vh;
+}

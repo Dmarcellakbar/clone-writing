@@ -86,7 +86,7 @@ export default function Feature4() {
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-52">
+          <div className="lg:pl-40">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
@@ -132,14 +132,14 @@ export default function Feature4() {
           className="absolute w-0 lg:w-fit right-0 top-40"
         >
           {/* <div className={`bg-[url('../assets/img/feat4.svg')]`}></div> */}
-          <Image src={imgF4} alt={'img'} width={500} />
+          <Image src={imgF4} alt={'img'} width={470} loading="lazy" />
         </div>
 
         <div
           ref={sectionRefImageMobile}
           className="absolute w-0 md:w-fit lg:w-0 right-0 top-48 z-0"
         >
-          <Image src={imgF4} alt={'img'} width={400} quality={60} />
+          <Image src={imgF4} alt={'img'} width={400} loading="lazy" />
         </div>
       </div>
     </section>

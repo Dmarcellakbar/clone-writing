@@ -13,21 +13,21 @@ export default function Feature2() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
         y: -150,
-        opacity: -2,
+        opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: '80% center',
+          start: 'top 80%',
+          end: '90% 80%',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -39,15 +39,14 @@ export default function Feature2() {
       sectionRefImage.current,
       {
         x: 600,
-        immediateRender: false,
       },
       {
         x: 0,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: '80% center',
+          start: 'top 80%',
+          end: '90% 80%',
           scrub: false,
           // markers: true,
           toggleActions: 'play reverse play reverse',
@@ -57,11 +56,11 @@ export default function Feature2() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: -70, opacity: -2, immediateRender: false },
+      { y: -70, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
@@ -86,7 +85,7 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-52">
+          <div className="lg:pl-40">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
@@ -137,16 +136,16 @@ export default function Feature2() {
 
         <div
           ref={sectionRefImage}
-          className="absolute w-0 lg:w-fit right-0 top-0"
+          className="absolute w-0 lg:w-fit right-0 top-0 "
         >
-          <Image src={imgF2} alt={'img'} width={600} quality={60} />
+          <Image src={imgF2} alt={'img'} width={500} loading="lazy" />
         </div>
 
         <div
           ref={sectionRefImageMobile}
           className="absolute w-0 md:w-fit lg:w-0 right-0 top-0 z-0"
         >
-          <Image src={imgF2} alt={'img'} width={400} quality={60} />
+          <Image src={imgF2} alt={'img'} width={400} loading="lazy" />
         </div>
       </div>
     </section>

@@ -86,7 +86,7 @@ export default function Feature3() {
           ref={triggerRefDesktop}
           className="relative py-20  z-10 h-full flex items-center  "
         >
-          <div className="lg:pl-52">
+          <div className="lg:pl-40">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
@@ -128,16 +128,16 @@ export default function Feature3() {
         </div>
         <div
           ref={sectionRefImage}
-          className="absolute w-0 lg:w-fit right-20 top-48"
+          className="absolute w-0 lg:w-fit right-10 top-40"
         >
-          <Image src={imgF3} alt={'img'} width={500} quality={60} />
+          <Image src={imgF3} alt={'img'} width={470} loading="lazy" />
         </div>
 
         <div
           ref={sectionRefImageMobile}
           className="absolute w-0 md:w-fit lg:w-0 right-10 top-40 z-0"
         >
-          <Image src={imgF3} alt={'img'} width={400} quality={60} />
+          <Image src={imgF3} alt={'img'} width={400} loading="lazy" />
         </div>
       </div>
     </section>

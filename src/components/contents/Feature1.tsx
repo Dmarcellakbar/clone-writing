@@ -16,16 +16,16 @@ export default function Feature1() {
       sectionRefText.current,
       {
         y: -150,
-        opacity: -2,
+        opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: '80% center',
+          start: 'top 80%',
+          end: '90% 80%',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -77,6 +77,7 @@ export default function Feature1() {
                         alt={''}
                         width={25}
                         className="inline"
+                        loading="lazy"
                       />
                     </button>
                   </Link>
