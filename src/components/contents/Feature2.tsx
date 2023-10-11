@@ -27,7 +27,7 @@ export default function Feature2() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
-          end: '90% 80%',
+          end: 'bottom 80%',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -46,7 +46,7 @@ export default function Feature2() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
-          end: '90% 80%',
+          end: 'bottom 80%',
           scrub: false,
           // markers: true,
           toggleActions: 'play reverse play reverse',
@@ -64,7 +64,7 @@ export default function Feature2() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
-          end: '80% center',
+          end: 'bottom center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -80,7 +80,7 @@ export default function Feature2() {
 
   return (
     <section>
-      <div className="relative orange h-auto md:h-[100vh] lg:h-[110vh]">
+      <div className="relative orange h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "

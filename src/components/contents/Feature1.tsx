@@ -25,7 +25,7 @@ export default function Feature1() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top 80%',
-          end: '90% 80%',
+          end: 'bottom 80%',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -39,7 +39,7 @@ export default function Feature1() {
 
   return (
     <section>
-      <div className="relative bg-green-500 h-auto md:h-[100vh] lg:h-[110vh]">
+      <div className="relative bg-green-500 h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
           className="h-full py-20 flex items-center justify-center bg-gradient-to-r from-purple-600 from-60% to-pink-400 to-100% bg-opacity-50 "

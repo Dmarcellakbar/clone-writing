@@ -18,16 +18,16 @@ export default function Feature4() {
       sectionRefText.current,
       {
         y: -150,
-        opacity: -2,
+        opacity: 0,
       },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
-          end: '80% center',
+          end: 'bottom center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -43,11 +43,11 @@ export default function Feature4() {
       },
       {
         x: 0,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
-          end: '80% center',
+          end: 'bottom center',
           scrub: false,
           // markers: true,
           toggleActions: 'play reverse play reverse',
@@ -57,15 +57,15 @@ export default function Feature4() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: -70, opacity: -2, immediateRender: false },
+      { y: -70, opacity: 0, immediateRender: false },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
-          end: '80% center',
+          end: 'bottom center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -81,7 +81,7 @@ export default function Feature4() {
 
   return (
     <section>
-      <div className="relative  blue  h-auto md:h-[100vh] lg:h-[110vh]">
+      <div className="relative  blue  h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "
