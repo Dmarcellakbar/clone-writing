@@ -122,5 +122,17 @@ body {
 }
 
 .panel {
-  height: 100vh;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.center-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }

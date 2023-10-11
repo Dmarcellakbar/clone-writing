@@ -14,6 +14,18 @@ export default function Feature4() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
+    const tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.center-container4',
+        pin: true,
+        pinSpacing: '50%',
+        scrub: true,
+        start: 'top top',
+        end: '100%',
+        // markers: true,
+      },
+    });
+
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
@@ -23,11 +35,11 @@ export default function Feature4() {
       {
         y: 0,
         opacity: 1,
-        duration: 3,
+        duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
-          end: 'bottom center',
+          end: '200% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -39,15 +51,14 @@ export default function Feature4() {
       sectionRefImage.current,
       {
         x: 600,
-        immediateRender: false,
       },
       {
         x: 0,
-        duration: 3,
+        duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: 'top center',
-          end: 'bottom center',
+          end: '200% center',
           scrub: false,
           // markers: true,
           toggleActions: 'play reverse play reverse',
@@ -57,15 +68,15 @@ export default function Feature4() {
 
     const pinImageMobile = gsap.fromTo(
       sectionRefImageMobile.current,
-      { y: -70, opacity: 0, immediateRender: false },
+      { y: -70, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 3,
+        duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: 'bottom center',
+          start: 'top 80%',
+          end: 'bottom 80%',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -73,15 +84,16 @@ export default function Feature4() {
       }
     );
     return () => {
-      pinText.kill();
-      pinImage.kill();
-      pinImageMobile.kill();
+      pinText.revert();
+      pinImage.revert();
+      pinImageMobile.revert();
+      tl4.revert();
     };
   }, []);
 
   return (
-    <section>
-      <div className="relative  blue  h-[100vh] lg:h-[110vh]">
+    <section className="main-container">
+      <div className="center-container4 relative  blue  h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "

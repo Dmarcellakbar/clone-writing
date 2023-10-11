@@ -12,20 +12,33 @@ export default function Feature1() {
   gsap.registerPlugin(ScrollTrigger);
 
   useLayoutEffect(() => {
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.center-container1',
+        pin: true,
+        pinSpacing: '50%',
+        scrub: true,
+        start: 'top top',
+        end: '100%',
+        // markers: true,
+      },
+    });
+
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
-        y: -150,
-        opacity: 0,
+        y: -170,
+        opacity: -1,
+        delay: 0.5,
       },
       {
         y: 0,
         opacity: 1,
-        duration: 3,
+        duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top 80%',
-          end: 'bottom 80%',
+          start: 'top center',
+          end: '200% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -33,13 +46,14 @@ export default function Feature1() {
       }
     );
     return () => {
-      pinText.kill();
+      pinText.revert();
+      tl1.revert();
     };
   }, []);
 
   return (
-    <section>
-      <div className="relative bg-green-500 h-[100vh] lg:h-[110vh]">
+    <section className="main-container">
+      <div className="center-container1 relative bg-green-500 h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
           className="h-full py-20 flex items-center justify-center bg-gradient-to-r from-purple-600 from-60% to-pink-400 to-100% bg-opacity-50 "

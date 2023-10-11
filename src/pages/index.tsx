@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <title>Writing Hero</title>
       </Head>
 
-      <div className="bg-gray-50 ">
+      <div className="bg-gray-50">
         <Suspense fallback={<Loading />}>
           {/* <Tawk /> */}
           <Navbar
@@ -53,21 +53,21 @@ const Home: NextPage = () => {
           </Element>
           <Element className="element" name="section2">
             <Features />
-            {/* <div className="panel">
-              <Feature1 />
-            </div>
-            <div className="panel">
-              <Feature2 />
-            </div>
-            <div className="panel">
-              <Feature3 />
-            </div>
-            <div className="panel">
-              <Feature4 />
-            </div>
-            <div className="panel">
-              <Feature5 />
-            </div> */}
+            {/* <div className="panel"> */}
+            {/* <Feature1 /> */}
+            {/* </div> */}
+            {/* <div className="panel"> */}
+            {/* <Feature2 /> */}
+            {/* </div> */}
+            {/* <div className="panel"> */}
+            {/* <Feature3 /> */}
+            {/* </div> */}
+            {/* <div className="panel"> */}
+            {/* <Feature4 /> */}
+            {/* </div> */}
+            {/* <div className="panel"> */}
+            {/* <Feature5 /> */}
+            {/* </div> */}
           </Element>
           <Element className="element" name="section3">
             <Pricing />
