@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import headRobo2 from '@/assets/img/headnormal.svg';
 import textline from '@/assets/img/textline.png';
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ export default function Feature1() {
   const triggerRefDesktop = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {

@@ -47,6 +47,7 @@ function Feature() {
         // },
       },
     });
+
     const tl3 = gsap.timeline({
       scrollTrigger: {
         trigger: '.center-container3',
@@ -119,11 +120,11 @@ function Feature() {
     };
   });
   return (
-    <div className="main-container">
-      <div className="panel center-container1">
+    <div className="main-container relative">
+      <div className="panel center-container1 ">
         <Feature1 />
       </div>
-      <div className="panel center-container2">
+      <div className="panel center-container2 ">
         <Feature2 />
       </div>
       <div className="panel center-container3">

@@ -3,7 +3,7 @@ import headRobo from '@/assets/img/headwhite.svg';
 import imgF5 from '@/assets/img/part5-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 export default function Feature5() {

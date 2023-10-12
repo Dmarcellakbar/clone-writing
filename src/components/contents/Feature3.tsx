@@ -3,7 +3,7 @@ import headRobo2 from '@/assets/img/headnormal.svg';
 import imgF3 from '@/assets/img/part3-min.png';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 export default function Feature3() {
