@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Pricing() {
   return (
-    <div id="#section3">
+    <div id="section3">
       <section className="bg-gray-50 relative">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 z-10">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12 pt-10">

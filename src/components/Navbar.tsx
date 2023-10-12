@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import Logo from './Logo';
+import { Link } from 'react-scroll';
+import NextLink from 'next/link';
 
 interface NavbarProps {
   link1: string;
@@ -36,13 +37,30 @@ const Navbar: React.FC<NavbarProps> = ({
         <Logo />
 
         <div className="hidden lg:flex items-center space-x-9">
-          <Link href={link1To}>{link1}</Link>
-          <Link href={link2To}>{link2}</Link>
-          <Link href={link3To}>{link3}</Link>
-          <Link href={link4To}>{link4}</Link>
+          <Link to={link1To} smooth={true}>
+            <div className="hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+              {link1}
+            </div>
+          </Link>
+
+          <Link to={link2To} smooth={true}>
+            <div className="hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+              {link2}
+            </div>
+          </Link>
+          <Link to={link3To} smooth={true}>
+            <div className="hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+              {link3}
+            </div>
+          </Link>
+          <NextLink href={link4To}>
+            <div className="hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  ">
+              {link4}
+            </div>
+          </NextLink>
         </div>
         <div className="hidden lg:flex items-end space-x-2 ">
-          <Link href={link5To}>
+          <NextLink href={link5To}>
             <div
               style={{
                 paddingTop: '1px',
@@ -50,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 paddingLeft: '1px',
                 paddingRight: '1px',
               }}
-              className="w-fit h-fit cursor-pointer text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+              className="w-fit h-fit cursor-pointer hover:shadow-lg hover:transition hover:scale-105 ease-in-out text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
             >
               <div className="bg-white rounded-full px-5 py-[7px]">
                 <span className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">
@@ -58,19 +76,19 @@ const Navbar: React.FC<NavbarProps> = ({
                 </span>
               </div>
             </div>
-          </Link>
-          <Link href={link6To}>
-            <button className="  text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+          </NextLink>
+          <NextLink href={link6To}>
+            <button className="  text-white font-bold py-2 px-4 hover:shadow-lg hover:transition hover:scale-105 ease-in-out rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               {link6}
             </button>
-          </Link>
+          </NextLink>
         </div>
 
         <button
           onClick={() => {
             document.querySelector('.mobile-menu')!.classList.toggle('hidden');
           }}
-          className="lg:hidden flex items-center"
+          className="lg:hidden flex items-center "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -90,11 +108,17 @@ const Navbar: React.FC<NavbarProps> = ({
       </nav>
       <div className="mobile-menu hidden ">
         <div className="flex  flex-col items-center space-y-2 px-4 pt-3 pb-3 text-sm">
-          <Link href={link1To}>{link1}</Link>
-          <Link href={link2To}>{link2}</Link>
-          <Link href={link3To}>{link3}</Link>
-          <Link href={link4To}>{link4}</Link>
-          <Link href={link5To}>
+          <Link to={link1To} smooth={true}>
+            {link1}
+          </Link>
+          <Link to={link2To} smooth={true}>
+            {link2}
+          </Link>
+          <Link to={link3To} smooth={true}>
+            {link3}
+          </Link>
+          <NextLink href={link4To}>{link4}</NextLink>
+          <NextLink href={link5To}>
             <div
               style={{
                 paddingTop: '1px',
@@ -110,12 +134,12 @@ const Navbar: React.FC<NavbarProps> = ({
                 </span>
               </div>
             </div>
-          </Link>
-          <Link href={link6To}>
+          </NextLink>
+          <NextLink href={link6To}>
             <button className=" hover:bg-gradient-to-tl  hover:text-yellow-300 text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               {link6}
             </button>
-          </Link>
+          </NextLink>
         </div>
       </div>
     </div>

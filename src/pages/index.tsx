@@ -36,11 +36,11 @@ const Home: NextPage = () => {
           {/* <Tawk /> */}
           <Navbar
             link1="Features"
-            link1To="#section2"
+            link1To="section2"
             link2="Pricing"
-            link2To="#section3"
+            link2To="section3"
             link3="FAQs"
-            link3To="#section4"
+            link3To="section4"
             link4={'Contact'}
             link4To={'/contact'}
             link5={'Log in'}

@@ -20,10 +20,10 @@ export default function error404() {
               links:
             </p>
 
-            <div className="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
+            <div className="flex items-center justify-center w-full mt-6 ">
               <Link href={'/'}>
-                <button className="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-20 rounded-lg shrink-0 sm:w-auto  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                  &#x2190; Take me home
+                <button className=" px-5 py-2 text-sm  text-white transition-colors duration-20 rounded-lg shrink-0 sm:w-auto  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                  &#x2190; Back to home
                 </button>
               </Link>
             </div>

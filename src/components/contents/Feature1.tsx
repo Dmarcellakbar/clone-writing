@@ -45,7 +45,7 @@ export default function Feature1() {
   }, []);
 
   return (
-    <section>
+    <section id="section2">
       <div className="relative bg-green-500 h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}

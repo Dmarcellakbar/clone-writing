@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     // eslint-disable-next-line @next/next/no-html-link-for-pages
     <a href="/">
-      <div className="font-bold text-xl tracking-wide hover:tracking-widest transform-all ease-in-out duration-700">
+      <div className="font-bold text-xl tracking-wide hover:scale-110 transform-all ease-in-out duration-700">
         <Image src={ImgLogo} alt={'logo'} width={150} />
       </div>
     </a>
