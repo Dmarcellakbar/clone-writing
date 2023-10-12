@@ -14,18 +14,6 @@ export default function Feature4() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const tl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.center-container4',
-        pin: true,
-        pinSpacing: '50%',
-        scrub: true,
-        start: 'top top',
-        end: '100%',
-        // markers: true,
-      },
-    });
-
     const pinText = gsap.fromTo(
       sectionRefText.current,
       {
@@ -36,13 +24,19 @@ export default function Feature4() {
         y: 0,
         opacity: 1,
         duration: 1,
+        delay: 0.3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: '200% center',
+          start: '455% center',
+          end: '700% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
-          // markers: true,
+          // markers: {
+          //   startColor: 'blue',
+          //   endColor: 'red',
+          //   fontSize: '18px',
+          //   indent: 20,
+          // },
         },
       }
     );
@@ -55,12 +49,18 @@ export default function Feature4() {
       {
         x: 0,
         duration: 1,
+        delay: 0.3,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: '200% center',
+          start: '455% center',
+          end: '700% center',
           scrub: false,
-          // markers: true,
+          // markers: {
+          //   startColor: 'blue',
+          //   endColor: 'red',
+          //   fontSize: '18px',
+          //   indent: 20,
+          // },
           toggleActions: 'play reverse play reverse',
         },
       }
@@ -73,13 +73,19 @@ export default function Feature4() {
         y: 0,
         opacity: 1,
         duration: 1,
+        delay: 0.5,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: 'top center',
-          end: '200% center',
+          start: '460% center',
+          end: '700% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
-          // markers: true,
+          // markers: {
+          //   startColor: 'blue',
+          //   endColor: 'red',
+          //   fontSize: '18px',
+          //   indent: 20,
+          // },
         },
       }
     );
@@ -87,13 +93,12 @@ export default function Feature4() {
       pinText.revert();
       pinImage.revert();
       pinImageMobile.revert();
-      tl4.revert();
     };
   }, []);
 
   return (
-    <section className="main-container">
-      <div className="center-container4 relative  blue  h-[100vh] lg:h-[110vh]">
+    <section>
+      <div className="relative  blue  h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex items-center  "
