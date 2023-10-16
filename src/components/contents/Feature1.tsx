@@ -26,15 +26,15 @@ export default function Feature1() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: '5% center',
-          end: '250% center',
+          end: '265% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
-          // markers: {
-          //   startColor: 'blue',
-          //   endColor: 'red',
-          //   fontSize: '18px',
-          //   indent: 20,
-          // },
+          markers: {
+            startColor: 'blue',
+            endColor: 'red',
+            fontSize: '18px',
+            indent: 20,
+          },
         },
       }
     );
