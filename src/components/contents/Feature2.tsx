@@ -103,13 +103,13 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex lg:items-center items-start  justify-center lg:justify-start"
         >
-          <div className="lg:pl-40 pt-4 md:pt-14 lg:pt-0">
+          <div className="lg:pl-40 pt-0 md:pt-14 lg:pt-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
                 className="lg:max-w-5xl lg:mx-auto text-center lg:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800">
+                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
@@ -127,7 +127,7 @@ export default function Feature2() {
                   for upcoming features that will blow your mind!
                 </p>
 
-                <div className="pt-4 max-w-5xl lg:max-w-xl">
+                <div className="pt-2 md:pt-4 lg:pt-4 max-w-5xl lg:max-w-xl">
                   <Link href={'/account/signup'}>
                     <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
                       <span className="mr-3 align-middle">
@@ -141,7 +141,7 @@ export default function Feature2() {
                       />
                     </button>
                   </Link>
-                  <button className=" lg:ml-4 md:ml-4 ml-0 py-2 mt-4 md:mt-0 lg:mt-0 px-4  text-white text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-4 md:ml-4 ml-0 py-2 mt-2 md:mt-0 lg:mt-0 px-4  text-white text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Create your own Custom AI Tool!
                     </span>
@@ -152,7 +152,7 @@ export default function Feature2() {
           </div>
           <div
             ref={sectionRefImageMobile}
-            className="absolute w-[300px] md:w-[500px] lg:w-0 bottom-16 md:bottom-32 right-0 "
+            className="absolute w-[200px] md:w-[500px] lg:w-0 bottom-16 md:bottom-32 right-0 "
           >
             <Image src={imgF2} alt={'img'} loading="lazy" />
           </div>
