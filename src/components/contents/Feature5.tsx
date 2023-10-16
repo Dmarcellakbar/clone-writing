@@ -27,8 +27,8 @@ export default function Feature5() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '605% center',
-          end: '850% center',
+          start: '5% center',
+          end: '270% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: {
@@ -52,8 +52,8 @@ export default function Feature5() {
         duration: 1,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '605% center',
-          end: '850% center',
+          start: '5% center',
+          end: '270% center',
           scrub: false,
           // markers: {
           //   startColor: 'blue',
@@ -76,8 +76,8 @@ export default function Feature5() {
         delay: 0.5,
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
-          start: '610% center',
-          end: '850% center',
+          start: '5% center',
+          end: '270% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,

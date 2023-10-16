@@ -14,6 +14,23 @@ function Feature() {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   useEffect(() => {
     let panels = gsap.utils.toArray('.panel');
+    panels.forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel as HTMLElement,
+        start: 'top bottom',
+        end: 'top top',
+        snap: {
+          snapTo: 10 / (panels.length - 1),
+          duration: 0.1,
+        },
+        // markers: {
+        //   startColor: 'black',
+        //   endColor: 'yellow',
+        //   fontSize: '18px',
+        //   indent: 20,
+        // },
+      });
+    });
 
     const tl1 = gsap.timeline({
       scrollTrigger: {
@@ -96,21 +113,7 @@ function Feature() {
         // },
       },
     });
-    panels.forEach((panel, i) => {
-      ScrollTrigger.create({
-        trigger: panel as HTMLElement,
-        start: 'top bottom',
-        end: 'top top',
-        snap: 1,
-        // onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
-        // markers: {
-        //   startColor: 'black',
-        //   endColor: 'yellow',
-        //   fontSize: '18px',
-        //   indent: 20,
-        // },
-      });
-    });
+
     return () => {
       tl1.revert();
       tl2.revert();
@@ -120,20 +123,29 @@ function Feature() {
     };
   });
   return (
-    <div className="main-container relative ">
-      <div className="panel center-container1 ">
-        <Feature1 />
+    <div className="main-container relative">
+      <div className=" sticky h-[300vh]">
+        <div className="panel center-container1 absolute w-[100%]">
+          <Feature1 />
+        </div>
       </div>
-      <div className="panel center-container2 ">
-        <Feature2 />
+      <div className=" sticky h-[300vh]">
+        <div className="panel center-container2 absolute w-[100%]">
+          <Feature2 />
+        </div>
       </div>
-      <div className="panel center-container3">
-        <Feature3 />
+      <div className=" sticky h-[300vh]">
+        <div className="panel center-container3 absolute w-[100%]">
+          <Feature3 />
+        </div>
       </div>
-      <div className="panel center-container4">
-        <Feature4 />
+      <div className=" sticky h-[300vh]">
+        <div className="panel center-container4 absolute w-[100%]">
+          <Feature4 />
+        </div>
       </div>
-      <div className="panel center-container5">
+
+      <div className="panel center-container5 ">
         <Feature5 />
       </div>
     </div>
