@@ -29,12 +29,12 @@ export default function Feature1() {
           end: '265% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
-          markers: {
-            startColor: 'blue',
-            endColor: 'red',
-            fontSize: '18px',
-            indent: 20,
-          },
+          // markers: {
+          //   startColor: 'blue',
+          //   endColor: 'red',
+          //   fontSize: '18px',
+          //   indent: 20,
+          // },
         },
       }
     );
