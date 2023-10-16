@@ -69,8 +69,8 @@ export default function Feature1() {
                 <p className="max-w-3xl mx-auto mb-10 text-md md:text-xl lg:text-xl text-gray-300">
                   Whether you project confidence, playfulness, formality, or
                   exclusively use online language, <b>WritingHero.AI</b>{' '}
-                  assimilates into brand voice to help you stay <br />
-                  consistent, whatever you write.
+                  assimilates into brand voice to help you stay consistent,
+                  whatever you write.
                 </p>
 
                 <div className="pt-4 ">
@@ -88,7 +88,7 @@ export default function Feature1() {
                       />
                     </button>
                   </Link>
-                  <button className=" lg:ml-4 lg:mt-0 mt-4 py-3  px-6  text-white text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-4 md:ml-4 ml-0 lg:mt-0 mt-4 py-3  px-6  text-white text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Learn More about Brand Voice
                     </span>

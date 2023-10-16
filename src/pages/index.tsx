@@ -23,6 +23,8 @@ const Feature3 = dynamic(() => import('@/components/contents/Feature3'));
 const Feature4 = dynamic(() => import('@/components/contents/Feature4'));
 const Feature5 = dynamic(() => import('@/components/contents/Feature5'));
 
+import Foo from '../components/section/Try';
+
 // import Tawk from '@/components/TawkToChat';
 const Home: NextPage = () => {
   return (
@@ -51,6 +53,7 @@ const Home: NextPage = () => {
           <Element className="element" name="section1">
             <Hero />
           </Element>
+          {/* <Foo /> */}
           <Element className="element" name="section2">
             <Features />
             {/* <div className="panel"> */}

@@ -100,21 +100,21 @@ export default function Feature3() {
       <div className="relative  red h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative py-20  z-10 h-full flex items-center  "
+          className="relative py-20  z-10 h-full flex lg:items-center items-start  justify-center lg:justify-start"
         >
-          <div className="lg:pl-40">
+          <div className="lg:pl-40 pt-4 md:pt-14 lg:pt-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
-                className="max-w-4xl mx-auto text-center md:text-left p-6 lg:p-2"
+                className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-2xl mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl lg:max-w-2xl mb-6 text-3xl md:text-4xl lg:text-6xl font-bold text-gray-100">
                   <span className="leading-tight">A FULL-FEATURED</span>
                   <br />
                   <span className="leading-tight">document editor</span>
                 </div>
 
-                <p className=" max-w-lg  mb-2 text-sm md:text-md lg:text-md text-white">
+                <p className=" max-w-5xl lg:max-w-xl  mb-2 text-sm md:text-lg lg:text-lg text-white">
                   A full editor, so you can create and share projects and
                   documents with your team - quickly and easily. Plus, an
                   easy-to-use adjustment panel makes working with existing or
@@ -140,20 +140,20 @@ export default function Feature3() {
                 </div>
               </div>
             </div>
+            <div
+              ref={sectionRefImageMobile}
+              className="container mx-auto w-[300px] md:w-[500px] lg:w-0 "
+            >
+              <Image src={imgF3} alt={'img'} loading="lazy" />
+            </div>
           </div>
-        </div>
-        <div
-          ref={sectionRefImage}
-          className="absolute w-0 lg:w-fit right-10 top-40"
-        >
-          <Image src={imgF3} alt={'img'} width={470} loading="lazy" />
         </div>
 
         <div
-          ref={sectionRefImageMobile}
-          className="absolute w-0 md:w-fit lg:w-0 right-10 top-24 z-0"
+          ref={sectionRefImage}
+          className="absolute w-0 md:w-0 lg:w-fit top-1/2 right-10 transform  -translate-y-1/2"
         >
-          <Image src={imgF3} alt={'img'} width={400} loading="lazy" />
+          <Image src={imgF3} alt={'img'} width={470} loading="lazy" />
         </div>
       </div>
     </section>

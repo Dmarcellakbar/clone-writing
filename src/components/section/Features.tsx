@@ -120,7 +120,7 @@ function Feature() {
     };
   });
   return (
-    <div className="main-container relative">
+    <div className="main-container relative ">
       <div className="panel center-container1 ">
         <Feature1 />
       </div>
