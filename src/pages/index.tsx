@@ -23,7 +23,7 @@ const Feature3 = dynamic(() => import('@/components/contents/Feature3'));
 const Feature4 = dynamic(() => import('@/components/contents/Feature4'));
 const Feature5 = dynamic(() => import('@/components/contents/Feature5'));
 
-import Foo from '../components/section/Try';
+// import Foo from '../components/section/Try';
 
 // import Tawk from '@/components/TawkToChat';
 const Home: NextPage = () => {
