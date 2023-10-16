@@ -152,7 +152,7 @@ export default function Feature2() {
           </div>
           <div
             ref={sectionRefImageMobile}
-            className="absolute w-[200px] md:w-[500px] lg:w-0 bottom-16 md:bottom-32 right-0 "
+            className="absolute w-[250px] md:w-[500px] lg:w-0 bottom-16 md:bottom-32 right-0 "
           >
             <Image src={imgF2} alt={'img'} loading="lazy" />
           </div>
