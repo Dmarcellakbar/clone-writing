@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Dotpoint from './dotpoint';
 
 export default function Feature5() {
   const sectionRefText = useRef(null);
@@ -139,6 +140,15 @@ export default function Feature5() {
             >
               <Image src={imgF5} alt={'img'} loading="lazy" />
             </div>
+          </div>
+          <div className="section-menu fixed  left-3 top-60 z-[3]">
+            <Dotpoint
+              active1={''}
+              active2={''}
+              active3={''}
+              active4={''}
+              active5={'active'}
+            />
           </div>
         </div>
 
