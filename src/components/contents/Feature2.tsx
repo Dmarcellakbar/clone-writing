@@ -103,33 +103,33 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex lg:items-center items-start  justify-center lg:justify-start"
         >
-          <div className="lg:pl-40 pt-0 md:pt-14 lg:pt-0">
+          <div className="lg:pl-20 pt-0 md:pt-14 lg:pt-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
-                className="lg:max-w-5xl lg:mx-auto text-center lg:text-left p-6 lg:p-2"
+                className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-0 "
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800">
+                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-bold text-gray-800">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
                 </div>
 
-                <p className=" max-w-5xl lg:max-w-xl  mb-2 text-sm md:text-lg lg:text-lg text-gray-800">
+                <p className=" max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-lg lg:text-md text-gray-800">
                   Unlock the power of over 100 carefully crafted AI templates
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-5xl lg:max-w-lg  mb-2 text-sm md:text-lg lg:text-lg text-gray-800">
+                <p className="max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-lg lg:text-md text-gray-800">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
                   for upcoming features that will blow your mind!
                 </p>
 
-                <div className="pt-2 md:pt-4 lg:pt-4 max-w-5xl lg:max-w-xl">
+                <div className="pt-2 md:pt-4 lg:pt-2 max-w-5xl lg:max-w-xl">
                   <Link href={'/account/signup'}>
-                    <button className="py-2  px-4  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                    <button className="py-2  px-4  text-purple-500 font-bold text-sm md:text-md  rounded-full bg-white border border-indigo-500">
                       <span className="mr-3 align-middle">
                         Give it a try now!
                       </span>
@@ -141,7 +141,7 @@ export default function Feature2() {
                       />
                     </button>
                   </Link>
-                  <button className=" lg:ml-4 md:ml-4 ml-0 py-2 mt-2 md:mt-0 lg:mt-0 px-4  text-white text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-4 md:ml-4 ml-0 py-2 mt-2 md:mt-0 lg:mt-0 px-4  text-white text-sm md:text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Create your own Custom AI Tool!
                     </span>
@@ -152,7 +152,7 @@ export default function Feature2() {
           </div>
           <div
             ref={sectionRefImageMobile}
-            className="absolute w-[250px] md:w-[500px] lg:w-0 bottom-16 md:bottom-32 right-0 "
+            className="absolute w-[250px] md:w-[500px] lg:w-0 bottom-0 md:bottom-32 right-0 "
           >
             <Image src={imgF2} alt={'img'} loading="lazy" />
           </div>
@@ -162,7 +162,7 @@ export default function Feature2() {
           ref={sectionRefImage}
           className="absolute w-0 md:w-0 lg:w-fit top-1/2 right-0 transform  -translate-y-1/2"
         >
-          <Image src={imgF2} alt={'img'} width={500} loading="lazy" />
+          <Image src={imgF2} alt={'img'} width={480} loading="lazy" />
         </div>
       </div>
     </section>

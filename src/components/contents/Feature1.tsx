@@ -54,7 +54,7 @@ export default function Feature1() {
           <div ref={sectionRefText} className="text-center">
             <div className="container px-4 mx-auto">
               <div className="max-w-4xl mx-auto text-center">
-                <div className=" max-w-5xl mx-auto text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl mx-auto text-3xl md:text-5xl lg:text-5xl font-bold text-gray-100">
                   <span className="leading-tight">
                     The Tone of Voice establishes
                   </span>
@@ -62,20 +62,20 @@ export default function Feature1() {
                     <Image src={textline} alt={''} width={500} />
                   </div>
                 </div>
-                <div className=" max-w-5xl mx-auto mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-100">
+                <div className=" max-w-5xl mx-auto mb-4 text-3xl md:text-5xl lg:text-5xl font-bold text-gray-100">
                   <span className="leading-tight">your brand.</span>
                 </div>
 
-                <p className="max-w-3xl mx-auto mb-10 text-md md:text-xl lg:text-xl text-gray-300">
+                <p className="max-w-3xl mx-auto mb-4 text-sm md:text-lg lg:text-lg text-gray-300">
                   Whether you project confidence, playfulness, formality, or
                   exclusively use online language, <b>WritingHero.AI</b>{' '}
                   assimilates into brand voice to help you stay consistent,
                   whatever you write.
                 </p>
 
-                <div className="pt-4 ">
+                <div className="pt-2 ">
                   <Link href={'/account/signup'}>
-                    <button className="py-3  px-6  text-purple-500 font-bold text-md  rounded-full bg-white border border-indigo-500">
+                    <button className="py-3  px-6  text-purple-500 font-bold text-sm md:text-md  rounded-full bg-white border border-indigo-500">
                       <span className="mr-4 align-middle">
                         Give it a try now!
                       </span>
@@ -88,7 +88,7 @@ export default function Feature1() {
                       />
                     </button>
                   </Link>
-                  <button className=" lg:ml-4 md:ml-4 ml-0 lg:mt-0 mt-4 py-3  px-6  text-white text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-4 md:ml-4 ml-0 lg:mt-0 mt-4 py-3  px-6  text-white text-sm md:text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Learn More about Brand Voice
                     </span>

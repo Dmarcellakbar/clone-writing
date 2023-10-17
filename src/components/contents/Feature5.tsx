@@ -98,27 +98,27 @@ export default function Feature5() {
           ref={triggerRefDesktop}
           className="relative py-20 z-10 h-full flex lg:items-center items-start  justify-center lg:justify-start"
         >
-          <div className="lg:pl-40 pt-4 md:pt-14 lg:pt-0">
+          <div className="lg:pl-20 pt-0 md:pt-14 lg:pt-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-5xl mb-6 text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800">
+                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-bold text-gray-800">
                   <span className="leading-tight">Supercharge</span>
                   <br />
                   <span className="leading-tight">Team Productivity</span>
                 </div>
 
-                <p className="max-w-5xl lg:max-w-xl  mb-2 text-sm md:text-lg lg:text-lg text-gray-800">
+                <p className="max-w-5xl lg:max-w-md  mb-2 text-xs md:text-lg lg:text-md text-gray-800">
                   Collaborate seamlessly with your team using Writing Hero!
                   Unlock the power of unlimited projects and documents, enabling
                   smooth sharing and elevated writing productivity.
                 </p>
 
-                <div className="pt-4 ">
+                <div className="pt-4 lg:pt-2 ">
                   <Link href={'/account/signup'}>
-                    <button className="py-3  px-6  text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+                    <button className="py-3  px-6  text-white font-bold text-sm md:text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                       <span className="mr-4 align-middle">
                         Give it a try now!
                       </span>
@@ -135,7 +135,7 @@ export default function Feature5() {
             </div>
             <div
               ref={sectionRefImageMobile}
-              className="container mx-auto w-[300px] md:w-[500px] lg:w-0 "
+              className="container mx-auto w-[250px] md:w-[500px] lg:w-0 "
             >
               <Image src={imgF5} alt={'img'} loading="lazy" />
             </div>
@@ -146,7 +146,7 @@ export default function Feature5() {
           ref={sectionRefImage}
           className="absolute w-0 md:w-0 lg:w-fit top-1/2 right-10 transform  -translate-y-1/2"
         >
-          <Image src={imgF5} alt={'img'} width={400} loading="lazy" />
+          <Image src={imgF5} alt={'img'} width={380} loading="lazy" />
         </div>
       </div>
     </section>

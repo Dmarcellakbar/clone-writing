@@ -37,15 +37,15 @@ export default function TextArea() {
               {wordsLeft} words left
             </p>
           </div>
-          <div className="flex items-center justify-between px-3 py-2 border-t border-gray-300">
+          <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 items-center justify-between px-2 py-2 border-t border-gray-300">
             <label className="text-black text-xs ">
               What tone of voice do you want it rewritten in?
             </label>
 
-            <div className="flex pl-0 space-x-1 sm:pl-2">
+            <div className="flex space-x-2  ">
               <button
                 type="submit"
-                className="inline-flex items-center py-1 px-2 text-xs font-medium text-center text-black bg-white border border-gray-300 focus:ring-4 focus:ring-blue-200  hover:bg-purple-500 hover:text-white rounded-full"
+                className=" inline-flex items-center py-1 px-2 text-xs font-medium text-center text-black bg-white border border-gray-300 focus:ring-4 focus:ring-blue-200  hover:bg-purple-500 hover:text-white rounded-full"
               >
                 Excited &#128513;
               </button>
