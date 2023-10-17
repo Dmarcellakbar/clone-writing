@@ -104,13 +104,13 @@ export default function Feature5() {
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-bold text-gray-800">
+                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-extrabold text-black">
                   <span className="leading-tight">Supercharge</span>
                   <br />
                   <span className="leading-tight">Team Productivity</span>
                 </div>
 
-                <p className="max-w-5xl lg:max-w-md  mb-2 text-xs md:text-lg lg:text-md text-gray-800">
+                <p className="max-w-5xl lg:max-w-md  mb-2 text-xs md:text-lg lg:text-base text-black">
                   Collaborate seamlessly with your team using Writing Hero!
                   Unlock the power of unlimited projects and documents, enabling
                   smooth sharing and elevated writing productivity.
@@ -118,7 +118,7 @@ export default function Feature5() {
 
                 <div className="pt-4 lg:pt-2 ">
                   <Link href={'/account/signup'}>
-                    <button className="py-3  px-6  text-white font-bold text-sm md:text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+                    <button className="py-3  px-6  text-white font-bold text-sm md:text-base  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                       <span className="mr-4 align-middle">
                         Give it a try now!
                       </span>
@@ -146,7 +146,7 @@ export default function Feature5() {
           ref={sectionRefImage}
           className="absolute w-0 md:w-0 lg:w-fit top-1/2 right-10 transform  -translate-y-1/2"
         >
-          <Image src={imgF5} alt={'img'} width={380} loading="lazy" />
+          <Image src={imgF5} alt={'img'} width={370} loading="lazy" />
         </div>
       </div>
     </section>

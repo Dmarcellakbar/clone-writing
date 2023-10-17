@@ -59,7 +59,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="bg-white  mt-10 lg:mt-16  pb-6 px-2 rounded-t-3xl lg:rounded-t-full  border-t border-gray-200">
+                  <div className="bg-white  mt-10 lg:mt-16  pb-6 px-2 rounded-t-3xl lg:rounded-t-full  border-t border-gray-200 z-10 relative">
                     <h2 className="text-2xl pt-6 lg:px-20 lg:text-4xl font-extrabold ">
                       <span className="text-black leading-tight">
                         Over 100+ AI tools, a full document editor for long-form
@@ -67,7 +67,7 @@ export default function Home() {
                       </span>
                     </h2>
                   </div>
-                  <div className="bg-white rounded-b-3xl flex justify-center px-4">
+                  <div className="bg-white rounded-b-3xl flex justify-center px-4 relative z-10">
                     <div className="bg-gradient-to-r from-purple-700 from-30% via-purple-500 via-80% to-pink-500 to-100% p-3 rounded-3xl lg:w-fit ">
                       <DashScroll />
                     </div>
@@ -77,10 +77,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="absolute w-0 lg:w-fit left-0 top-0">
+          <div className="absolute w-0 lg:w-fit left-0 top-0 z-0">
             <Image src={objLeft} alt={'dot'} width={400} />
           </div>
-          <div className="absolute w-0 lg:w-fit right-0 top-0">
+          <div className="absolute w-0 lg:w-fit right-0 top-0 z-0">
             <Image src={objRight} alt={'dot'} width={400} />
           </div>
         </div>

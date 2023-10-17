@@ -109,18 +109,18 @@ export default function Feature2() {
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-0 "
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-bold text-gray-800">
+                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-extrabold text-black">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
                 </div>
 
-                <p className=" max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-lg lg:text-md text-gray-800">
+                <p className=" max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-base lg:text-base text-black">
                   Unlock the power of over 100 carefully crafted AI templates
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-lg lg:text-md text-gray-800">
+                <p className="max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-base lg:text-base text-black">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
@@ -129,7 +129,7 @@ export default function Feature2() {
 
                 <div className="pt-2 md:pt-4 lg:pt-2 max-w-5xl lg:max-w-xl">
                   <Link href={'/account/signup'}>
-                    <button className="py-2  px-4  text-purple-500 font-bold text-sm md:text-md  rounded-full bg-white border border-indigo-500">
+                    <button className="py-[12px]  px-4  text-purple-500 font-bold text-sm md:text-base  rounded-full bg-white border border-indigo-500">
                       <span className="mr-3 align-middle">
                         Give it a try now!
                       </span>
@@ -141,7 +141,7 @@ export default function Feature2() {
                       />
                     </button>
                   </Link>
-                  <button className=" lg:ml-4 md:ml-4 ml-0 py-2 mt-2 md:mt-0 lg:mt-0 px-4  text-white text-sm md:text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-4 md:ml-4 ml-0 py-[14px] mt-2 md:mt-0 lg:mt-0 px-4  text-white text-sm md:text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Create your own Custom AI Tool!
                     </span>
