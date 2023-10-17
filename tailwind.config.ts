@@ -15,6 +15,11 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+    },
+  },
   plugins: [require('@tailwindcss/forms')],
 };
 export default config;

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <div className="relative">
+        <div className="relative z-[5]">
           <div className="flex items-center justify-center bg-gray-50 py-12 lg:py-6">
             <div className="text-center">
               <div className="container px-4 mx-auto pb-10">

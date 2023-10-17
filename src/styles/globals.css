@@ -103,3 +103,13 @@ body {
 .panel {
   height: 100%;
 }
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.btn:hover {
+  background-color: white;
+}

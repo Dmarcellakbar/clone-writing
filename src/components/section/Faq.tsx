@@ -3,7 +3,7 @@ import React from 'react';
 export default function Faq() {
   return (
     <div id="section4">
-      <section className="bg-gray-50 relative">
+      <section className="bg-gray-50 relative z-[5]">
         <div className="relative py-8 px-4 mx-auto max-w-screen-lg lg:py-16 lg:px-6 z-10">
           <h2 className="text-2xl pt-10 pb-4 lg:text-4xl font-extrabold text-left">
             <span className="text-black leading-tight">

@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default function Pricing() {
   return (
     <div>
-      <section className="bg-white relative">
+      <section className="bg-white relative z-[5]">
         <div className="text-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 z-10">
           <div className="mx-auto max-w-screen-md flex items-center justify-center mb-8 lg:mb-12  ">
             <Image src={ImgLogo} alt={''} width={350} />
