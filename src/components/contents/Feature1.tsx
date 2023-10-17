@@ -98,7 +98,7 @@ export default function Feature1() {
               </div>
             </div>
           </div>
-          <div className="section-menu fixed  left-3 top-60 z-[3] ">
+          <div className="hidden md:block section-menu fixed left-0 md:left-2 lg:left-3  z-[3] transform  -translate-y-1/2">
             <Dotpoint
               active1={'active'}
               active2={''}

@@ -157,7 +157,7 @@ export default function Feature2() {
           >
             <Image src={imgF2} alt={'img'} loading="lazy" />
           </div>
-          <div className="section-menu fixed  left-3 top-60 z-[3]">
+          <div className="hidden md:block section-menu fixed  left-0 md:left-2 lg:left-3  md:top-96 transform  -translate-y-1/2 z-[3]">
             <Dotpoint
               active1={''}
               active2={'active'}
