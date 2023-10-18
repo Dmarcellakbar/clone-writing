@@ -13,12 +13,6 @@ const Faq = dynamic(() => import('@/components/section/Faq'));
 const Footer = dynamic(() => import('@/components/Footer'));
 const Features = dynamic(() => import('@/components/section/Features'));
 
-const Feature1 = dynamic(() => import('@/components/contents/Feature1'));
-const Feature2 = dynamic(() => import('@/components/contents/Feature2'));
-const Feature3 = dynamic(() => import('@/components/contents/Feature3'));
-const Feature4 = dynamic(() => import('@/components/contents/Feature4'));
-const Feature5 = dynamic(() => import('@/components/contents/Feature5'));
-
 // import Tawk from '@/components/TawkToChat';
 const Home: NextPage = () => {
   return (
@@ -27,7 +21,7 @@ const Home: NextPage = () => {
         <title>Writing Hero</title>
       </Head>
 
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 h-fit">
         <Suspense fallback={<Loading />}>
           {/* <Tawk /> */}
           <Navbar

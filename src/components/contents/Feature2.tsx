@@ -102,26 +102,26 @@ export default function Feature2() {
       <div className=" relative orange h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative gap-4 lg:gap-16 py-20  z-10 h-full flex flex-col lg:flex-row items-center  justify-center lg:justify-start"
+          className="relative gap-4 lg:gap-16 py-20  z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
         >
-          <div className="lg:pl-20 px-4 md:px-0">
+          <div className="lg:pr-52 px-4 md:px-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-0 "
               >
-                <div className=" max-w-5xl lg:max-w-xl  mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl font-extrabold text-black">
+                <div className=" max-w-5xl lg:max-w-xl xl:max-w-3xl mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl xl:text-7xl font-extrabold text-black">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
                 </div>
 
-                <p className=" max-w-5xl lg:max-w-md  mb-2 text-xs md:text-base lg:text-base text-black">
+                <p className=" max-w-5xl lg:max-w-md xl:max-w-2xl mb-2 text-xs md:text-base lg:text-base xl:text-lg text-black">
                   Unlock the power of over 100 carefully crafted AI templates
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-4xl lg:max-w-md  mb-2 text-xs md:text-base lg:text-base text-black">
+                <p className="max-w-4xl lg:max-w-md xl:max-w-2xl mb-2 text-xs md:text-base lg:text-base xl:text-lg text-black">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
@@ -164,7 +164,7 @@ export default function Feature2() {
           {/* Image */}
           <div
             ref={sectionRefImage}
-            className="hidden lg:block absolute right-0 w-2/4 "
+            className="hidden lg:block absolute right-0 w-2/5 "
           >
             <Image src={imgF2} alt={'img'} loading="lazy" />
           </div>

@@ -97,21 +97,21 @@ export default function Feature5() {
       <div className="relative  cyan  h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative gap-4 lg:gap-16 py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
+          className="relative  gap-4 lg:gap-20 py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
         >
           <div className="pt-0 px-4 md:px-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
-                className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-2"
+                className=" max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl font-extrabold text-black">
+                <div className=" max-w-5xl lg:max-w-xl xl:max-w-3xl mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl xl:text-7xl font-extrabold text-black">
                   <span className="leading-tight">Supercharge</span>
                   <br />
                   <span className="leading-tight">Team Productivity</span>
                 </div>
 
-                <p className="max-w-5xl lg:max-w-md  mb-2 text-xs md:text-lg lg:text-base text-black">
+                <p className="max-w-5xl lg:max-w-md xl:max-w-xl mb-2 text-xs md:text-lg lg:text-base xl:text-lg text-black">
                   Collaborate seamlessly with your team using Writing Hero!
                   Unlock the power of unlimited projects and documents, enabling
                   smooth sharing and elevated writing productivity.

@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-gradient-to-r from-purple-700  via-purple-500  to-pink-400 z-[5]">
+      <footer className="relative  bg-gradient-to-r from-purple-700  via-purple-500  to-pink-400 z-[5]">
         <div className="mx-auto w-full max-w-5xl p-4 py-6 lg:py-8">
           <div className="pb-10">
             <NextLink href="/" className="flex items-center ">

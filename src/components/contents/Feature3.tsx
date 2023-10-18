@@ -101,7 +101,7 @@ export default function Feature3() {
       <div className="relative  red h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative gap-4 lg:gap-4  py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
+          className="relative gap-4 lg:gap-14 pl-6  py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
         >
           <div className="pt-0 px-4 md:px-0">
             <div className=" container mx-auto">
@@ -109,13 +109,13 @@ export default function Feature3() {
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-0"
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl font-extrabold text-white">
+                <div className=" max-w-5xl lg:max-w-xl xl:max-w-3xl mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl xl:text-7xl font-extrabold text-white">
                   <span className="leading-tight">A FULL-FEATURED</span>
                   <br />
                   <span className="leading-tight">document editor</span>
                 </div>
 
-                <p className=" max-w-2xl lg:max-w-md  mb-2 text-xs md:text-lg lg:text-base text-white">
+                <p className=" max-w-2xl lg:max-w-md xl:max-w-xl  mb-2 text-xs md:text-lg lg:text-base xl:text-lg text-white">
                   A full editor, so you can create and share projects and
                   documents with your team - quickly and easily. Plus, an
                   easy-to-use adjustment panel makes working with existing or
