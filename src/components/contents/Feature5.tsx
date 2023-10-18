@@ -97,15 +97,15 @@ export default function Feature5() {
       <div className="relative  cyan  h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative py-20 z-10 h-full flex lg:items-center items-start  justify-center lg:justify-start"
+          className="relative gap-4 lg:gap-16 py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
         >
-          <div className="lg:pl-20 pt-0 md:pt-14 lg:pt-0">
+          <div className="pt-0 px-4 md:px-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-2"
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-extrabold text-black">
+                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl font-extrabold text-black">
                   <span className="leading-tight">Supercharge</span>
                   <br />
                   <span className="leading-tight">Team Productivity</span>
@@ -119,7 +119,7 @@ export default function Feature5() {
 
                 <div className="pt-4 lg:pt-2 ">
                   <Link href={'/account/signup'}>
-                    <button className="py-3  px-6  text-white font-bold text-sm md:text-base  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+                    <button className="py-3  px-6 hover:transition hover:scale-105 ease-in-out   text-white font-bold text-sm md:text-base  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                       <span className="mr-4 align-middle">
                         Give it a try now!
                       </span>
@@ -134,14 +134,23 @@ export default function Feature5() {
                 </div>
               </div>
             </div>
-            <div
-              ref={sectionRefImageMobile}
-              className="container mx-auto w-[250px] md:w-[500px] lg:w-0 "
-            >
-              <Image src={imgF5} alt={'img'} loading="lazy" />
-            </div>
           </div>
-          <div className="hidden md:block section-menu fixed  left-0 md:left-2 lg:left-3  md:top-96 transform  -translate-y-1/2 z-[3]">
+          {/* Image */}
+          <div
+            ref={sectionRefImage}
+            className="hidden lg:block relative w-fit "
+          >
+            <Image src={imgF5} alt={'img'} width={370} loading="lazy" />
+          </div>
+          {/* Image mobile */}
+          <div
+            ref={sectionRefImageMobile}
+            className="lg:hidden block container mx-auto w-[250px] md:w-[400px] lg:w-0 "
+          >
+            <Image src={imgF5} alt={'img'} loading="lazy" />
+          </div>
+          {/* Dot */}
+          <div className="block section-menu fixed  left-1 md:left-2 lg:left-3   transform  -translate-y-1/2 z-[3]">
             <Dotpoint
               active1={''}
               active2={''}
@@ -150,13 +159,6 @@ export default function Feature5() {
               active5={'active'}
             />
           </div>
-        </div>
-
-        <div
-          ref={sectionRefImage}
-          className="absolute w-0 md:w-0 lg:w-fit top-1/2 right-10 transform  -translate-y-1/2"
-        >
-          <Image src={imgF5} alt={'img'} width={370} loading="lazy" />
         </div>
       </div>
     </section>

@@ -41,7 +41,7 @@ export default function Pricing() {
               </p>
 
               <Link href={'/account/signup'}>
-                <button className="w-full text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   <span className="align-middle">Select Package</span>
                 </button>
               </Link>
@@ -185,7 +185,7 @@ export default function Pricing() {
               </p>
 
               <Link href={'/account/signup'}>
-                <button className="w-full text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   <span className="align-middle">Select Package</span>
                 </button>
               </Link>
@@ -327,7 +327,7 @@ export default function Pricing() {
               </p>
 
               <Link href={'/account/signup'}>
-                <button className="w-full text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   <span className="align-middle">Select Package</span>
                 </button>
               </Link>

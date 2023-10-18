@@ -29,7 +29,7 @@ export default function Home() {
 
                   <div className="pt-8 max-w-4xl mx-auto flex justify-center">
                     <Link href={'/account/signup'}>
-                      <button className="text-sm py-3 mr-4 px-3 lg:px-6   text-white rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+                      <button className="text-sm py-3 mr-4 px-3 lg:px-6  hover:transition hover:scale-105 ease-in-out delay-50 text-white rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                         <span className="mr-3 align-middle">
                           Sign Up for <b>FREE</b>
                         </span>
@@ -49,7 +49,7 @@ export default function Home() {
                         paddingLeft: '1px',
                         paddingRight: '1px',
                       }}
-                      className="w-fit h-fit cursor-pointer text-sm text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+                      className="w-fit h-fit cursor-pointer text-sm text-white hover:transition hover:scale-105 ease-in-out delay-50 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
                     >
                       <div className="bg-white rounded-full px-6 py-[13px]">
                         <span className="leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-pink-500">

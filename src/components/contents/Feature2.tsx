@@ -102,26 +102,26 @@ export default function Feature2() {
       <div className=" relative orange h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative py-20 z-10 h-full flex lg:items-center items-start  justify-center lg:justify-start"
+          className="relative gap-4 lg:gap-16 py-20  z-10 h-full flex flex-col lg:flex-row items-center  justify-center lg:justify-start"
         >
-          <div className="lg:pl-20 pt-0 md:pt-14 lg:pt-0">
+          <div className="lg:pl-36 px-4 md:px-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
                 className="max-w-5xl mx-auto text-center lg:text-left p-6 lg:p-0 "
               >
-                <div className=" max-w-5xl lg:max-w-xl mb-2 md:mb-6 lg:mb-2 text-3xl md:text-5xl lg:text-5xl font-extrabold text-black">
+                <div className=" max-w-5xl lg:max-w-xl  mb-2 md:mb-6 lg:mb-2 text-4xl md:text-6xl lg:text-6xl font-extrabold text-black">
                   <span className="leading-tight">
                     Enjoy 100+ AI tools or Make your own!
                   </span>
                 </div>
 
-                <p className=" max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-base lg:text-base text-black">
+                <p className=" max-w-5xl lg:max-w-md  mb-2 text-xs md:text-base lg:text-base text-black">
                   Unlock the power of over 100 carefully crafted AI templates
                   designed to streamline your business writing needs.
                 </p>
 
-                <p className="max-w-5xl lg:max-w-lg  mb-2 text-xs md:text-base lg:text-base text-black">
+                <p className="max-w-4xl lg:max-w-md  mb-2 text-xs md:text-base lg:text-base text-black">
                   From <b>persuasive emails</b> to <b>professional reports</b>,
                   our <b>pre-made templates</b> are fine-tuned to help you
                   create polished and impactful content effortlessly. Stay tuned
@@ -130,7 +130,7 @@ export default function Feature2() {
 
                 <div className="pt-2 md:pt-4 lg:pt-2 max-w-5xl lg:max-w-xl">
                   <Link href={'/account/signup'}>
-                    <button className="py-[12px]  px-4  text-purple-500 font-bold text-sm md:text-base  rounded-full bg-white border border-indigo-500">
+                    <button className="py-[12px]  px-4  text-purple-500 font-bold text-sm md:text-base hover:transition hover:scale-105 ease-in-out   rounded-full bg-white border border-indigo-500">
                       <span className="mr-3 align-middle">
                         Give it a try now!
                       </span>
@@ -142,7 +142,7 @@ export default function Feature2() {
                       />
                     </button>
                   </Link>
-                  <button className=" lg:ml-4 md:ml-4 ml-0 py-[14px] mt-2 md:mt-0 lg:mt-0 px-4  text-white text-sm md:text-md  rounded-full bg-transparent border border-white">
+                  <button className=" lg:ml-4 md:ml-4 ml-0 py-[14px] mt-2 md:mt-0 lg:mt-0 px-4 hover:transition hover:scale-105 ease-in-out   text-white text-sm md:text-md  rounded-full bg-transparent border border-white">
                     <span className="leading-tight ">
                       Create your own Custom AI Tool!
                     </span>
@@ -151,13 +151,24 @@ export default function Feature2() {
               </div>
             </div>
           </div>
-          <div
-            ref={sectionRefImageMobile}
-            className="absolute w-[250px] md:w-[500px] lg:w-0 bottom-0 md:bottom-32 right-0 "
-          >
-            <Image src={imgF2} alt={'img'} loading="lazy" />
+
+          {/* mobile */}
+          <div className="w-full lg:w-0 flex justify-end ">
+            <div
+              ref={sectionRefImageMobile}
+              className=" w-[250px] md:w-[500px] lg:w-0 "
+            >
+              <Image src={imgF2} alt={'img'} loading="lazy" />
+            </div>
           </div>
-          <div className="hidden md:block section-menu fixed  left-0 md:left-2 lg:left-3  md:top-96 transform  -translate-y-1/2 z-[3]">
+          {/* Image */}
+          <div
+            ref={sectionRefImage}
+            className="hidden lg:block absolute right-0 w-fit "
+          >
+            <Image src={imgF2} alt={'img'} width={470} loading="lazy" />
+          </div>
+          <div className="block section-menu fixed  left-1 md:left-2 lg:left-3 transform  -translate-y-1/2 z-[3]">
             <Dotpoint
               active1={''}
               active2={'active'}
@@ -166,13 +177,6 @@ export default function Feature2() {
               active5={''}
             />
           </div>
-        </div>
-
-        <div
-          ref={sectionRefImage}
-          className="absolute w-0 md:w-0 lg:w-fit top-1/2 right-0 transform  -translate-y-1/2"
-        >
-          <Image src={imgF2} alt={'img'} width={480} loading="lazy" />
         </div>
       </div>
     </section>

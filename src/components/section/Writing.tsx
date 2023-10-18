@@ -84,7 +84,7 @@ export default function Pricing() {
           </div>
           <div className="py-4 ">
             <Link href={'/account/signup'}>
-              <button className="py-3  px-6 w-fit h-full text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+              <button className="py-3  px-6 hover:transition hover:scale-105 ease-in-out   w-fit h-full text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                 <span className="mr-4 align-middle h-full w-full">
                   Give it a try now!
                 </span>

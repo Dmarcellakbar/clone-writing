@@ -54,23 +54,23 @@ const Navbar: React.FC<NavbarProps> = ({
 
         <div className="hidden lg:flex items-center space-x-9">
           <Link to={link1To} smooth={true}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link1}
             </div>
           </Link>
 
           <Link to={link2To} smooth={true}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link2}
             </div>
           </Link>
           <Link to={link3To} smooth={true}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link3}
             </div>
           </Link>
           <NextLink href={link4To}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  ">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  ">
               {link4}
             </div>
           </NextLink>
@@ -125,22 +125,22 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="mobile-menu hidden ">
         <div className="flex  flex-col items-center space-y-2 px-4 pt-3 pb-3 text-sm">
           <Link to={link1To} smooth={true}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link1}
             </div>
           </Link>
           <Link to={link2To} smooth={true}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link2}
             </div>
           </Link>
           <Link to={link3To} smooth={true}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link3}
             </div>
           </Link>
           <NextLink href={link4To}>
-            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out delay-150 hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
+            <div className="cursor-pointer hover:text-indigo-800 hover:transition hover:scale-105 ease-in-out hover:border hover:border-indigo-500 hover:shadow-lg rounded-xl px-1  focus:ring focus:ring-violet-300">
               {link4}
             </div>
           </NextLink>
