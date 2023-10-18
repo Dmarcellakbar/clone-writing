@@ -158,8 +158,8 @@ export default function Pricing() {
                 </li>
               </ul>
               <button
-                style={{ top: '-25px' }}
-                className="absolute cursor-default font-semibold text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-indigo-500"
+                style={{ top: '-15px' }}
+                className="absolute cursor-default font-semibold text-xs py-1.5  px-3 lg:px-6 mb-6 text-white rounded-full bg-indigo-500"
               >
                 <span className=" align-middle">Limited time discount</span>
               </button>
@@ -302,8 +302,8 @@ export default function Pricing() {
                 </li>
               </ul>
               <button
-                style={{ top: '-25px' }}
-                className="absolute cursor-default text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full font-semibold bg-pink-500"
+                style={{ top: '-15px' }}
+                className="absolute cursor-default text-xs py-1.5  px-3 lg:px-6 mb-6 text-white rounded-full font-semibold bg-pink-500"
               >
                 <span className=" align-middle">Best value</span>
               </button>
@@ -408,8 +408,8 @@ export default function Pricing() {
                 </li>
               </ul>
               <button
-                style={{ top: '-25px' }}
-                className="absolute cursor-default font-semibold text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-indigo-500"
+                style={{ top: '-15px' }}
+                className="absolute cursor-default font-semibold text-xs py-1.5  px-3 lg:px-6 mb-6 text-white rounded-full bg-indigo-500"
               >
                 <span className=" align-middle">Limited time 1+1k words</span>
               </button>
