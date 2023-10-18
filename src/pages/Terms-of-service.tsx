@@ -68,7 +68,7 @@ export default function Terms() {
           />
           <div className="bg-gray-50 min-h-screen  justify-center py-12">
             <div className="container px-4 mx-auto pb-10">
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-3xl mx-auto">
                 <span className=" text-3xl lg:text-6xl font-bold h-fit">
                   Terms and Conditions
                 </span>

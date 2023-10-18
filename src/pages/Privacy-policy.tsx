@@ -67,9 +67,9 @@ export default function Privarypolicy() {
             link6To={'/signup'}
           />
           <div className="bg-gray-50 min-h-screen  justify-center py-12">
-            <div className="container px-4 mx-auto pb-10">
-              <div className="max-w-4xl mx-auto">
-                <span className=" text-3xl lg:text-6xl font-bold h-fit">
+            <div className="container px-4 mx-auto  pb-10">
+              <div className="max-w-3xl mx-auto ">
+                <span className="text-3xl lg:text-6xl font-bold h-fit">
                   Privacy Policy
                 </span>
                 <p className=" text-black mt-6">

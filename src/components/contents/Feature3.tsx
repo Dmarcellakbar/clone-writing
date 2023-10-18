@@ -101,7 +101,7 @@ export default function Feature3() {
       <div className="relative  red h-[100vh] lg:h-[110vh]">
         <div
           ref={triggerRefDesktop}
-          className="relative gap-4 lg:gap-10  py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
+          className="relative gap-4 lg:gap-4  py-20 z-10 h-full flex flex-col lg:flex-row items-center  justify-center "
         >
           <div className="pt-0 px-4 md:px-0">
             <div className=" container mx-auto">
@@ -145,9 +145,9 @@ export default function Feature3() {
           {/* Image */}
           <div
             ref={sectionRefImage}
-            className="hidden lg:block relative w-fit "
+            className="hidden lg:block relative w-5/12 "
           >
-            <Image src={imgF3} alt={'img'} width={430} loading="lazy" />
+            <Image src={imgF3} alt={'img'} loading="lazy" />
           </div>
           {/* Image mobile */}
           <div

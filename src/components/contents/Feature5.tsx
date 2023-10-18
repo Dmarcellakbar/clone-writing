@@ -29,7 +29,7 @@ export default function Feature5() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: '5% center',
-          end: '265% center',
+          end: '260% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: {
@@ -54,7 +54,7 @@ export default function Feature5() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: '5% center',
-          end: '265% center',
+          end: '260% center',
           scrub: false,
           // markers: {
           //   startColor: 'blue',
@@ -78,7 +78,7 @@ export default function Feature5() {
         scrollTrigger: {
           trigger: triggerRefDesktop.current,
           start: '5% center',
-          end: '265% center',
+          end: '260% center',
           scrub: false,
           toggleActions: 'play reverse play reverse',
           // markers: true,
@@ -138,9 +138,9 @@ export default function Feature5() {
           {/* Image */}
           <div
             ref={sectionRefImage}
-            className="hidden lg:block relative w-fit "
+            className="hidden lg:block relative w-4/12 "
           >
-            <Image src={imgF5} alt={'img'} width={370} loading="lazy" />
+            <Image src={imgF5} alt={'img'} loading="lazy" />
           </div>
           {/* Image mobile */}
           <div

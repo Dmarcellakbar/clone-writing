@@ -155,9 +155,9 @@ export default function Feature4() {
           {/* Image */}
           <div
             ref={sectionRefImage}
-            className="hidden lg:block absolute right-0 w-fit "
+            className="hidden lg:block absolute right-0 w-5/12 "
           >
-            <Image src={imgF4} alt={'img'} width={470} loading="lazy" />
+            <Image src={imgF4} alt={'img'} loading="lazy" />
           </div>
 
           <div className="block section-menu fixed left-1 md:left-2 lg:left-3   transform  -translate-y-1/2 z-[3]">

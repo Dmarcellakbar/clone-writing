@@ -104,7 +104,7 @@ export default function Feature2() {
           ref={triggerRefDesktop}
           className="relative gap-4 lg:gap-16 py-20  z-10 h-full flex flex-col lg:flex-row items-center  justify-center lg:justify-start"
         >
-          <div className="lg:pl-36 px-4 md:px-0">
+          <div className="lg:pl-20 px-4 md:px-0">
             <div className=" container mx-auto">
               <div
                 ref={sectionRefText}
@@ -164,9 +164,9 @@ export default function Feature2() {
           {/* Image */}
           <div
             ref={sectionRefImage}
-            className="hidden lg:block absolute right-0 w-fit "
+            className="hidden lg:block absolute right-0 w-2/4 "
           >
-            <Image src={imgF2} alt={'img'} width={470} loading="lazy" />
+            <Image src={imgF2} alt={'img'} loading="lazy" />
           </div>
           <div className="block section-menu fixed  left-1 md:left-2 lg:left-3 transform  -translate-y-1/2 z-[3]">
             <Dotpoint
