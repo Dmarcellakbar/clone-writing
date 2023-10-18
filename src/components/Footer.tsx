@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import headRobo from '@/assets/img/footerlogo.svg';
-import Link from 'next/link';
+import NextLink from 'next/link';
+import { Link } from 'react-scroll';
 
 export default function Footer() {
   return (
@@ -9,9 +10,9 @@ export default function Footer() {
       <footer className="relative bg-gradient-to-r from-purple-700  via-purple-500  to-pink-400 z-[5]">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="pb-10">
-            <Link href="/" className="flex items-center">
+            <NextLink href="/" className="flex items-center">
               <Image src={headRobo} className="h-15" alt="logo" />
-            </Link>
+            </NextLink>
           </div>
           <div className="md:flex md:justify-between">
             <div className="grid grid-cols-2 gap-10 sm:gap-6 sm:grid-cols-3">
@@ -21,18 +22,22 @@ export default function Footer() {
                 </h2>
                 <ul className="text-gray-50  font-medium">
                   <li className="mb-4">
-                    <Link href="#section2" className="hover:underline">
-                      Features
+                    <Link to="section2" smooth={true}>
+                      <button>Features</button>
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link href="#section3" className="hover:underline">
-                      Pricing
+                    <Link to="section3" smooth={true}>
+                      <button>Pricing</button>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#section4" className="hover:underline">
-                      FAQ
+                    <Link
+                      to="section4"
+                      smooth={true}
+                      className="hover:underline"
+                    >
+                      <button>FAQ</button>
                     </Link>
                   </li>
                 </ul>
@@ -44,19 +49,25 @@ export default function Footer() {
                 </h2>
                 <ul className="text-gray-50  font-medium">
                   <li className="mb-4">
-                    <Link href="/Privacy-policy" className="hover:underline ">
+                    <NextLink
+                      href="/Privacy-policy"
+                      className="hover:underline "
+                    >
                       Privacy
-                    </Link>
+                    </NextLink>
                   </li>
                   <li className="mb-4">
-                    <Link href="/Terms-of-service" className="hover:underline">
+                    <NextLink
+                      href="/Terms-of-service"
+                      className="hover:underline"
+                    >
                       Terms
-                    </Link>
+                    </NextLink>
                   </li>
                   <li>
-                    <Link href="#" className="hover:underline">
+                    <NextLink href="#" className="hover:underline">
                       Contact
-                    </Link>
+                    </NextLink>
                   </li>
                 </ul>
               </div>
