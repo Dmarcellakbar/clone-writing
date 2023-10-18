@@ -8,10 +8,14 @@ export default function Footer() {
   return (
     <>
       <footer className="relative bg-gradient-to-r from-purple-700  via-purple-500  to-pink-400 z-[5]">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className="mx-auto w-full max-w-5xl p-4 py-6 lg:py-8">
           <div className="pb-10">
-            <NextLink href="/" className="flex items-center">
-              <Image src={headRobo} className="h-15" alt="logo" />
+            <NextLink href="/" className="flex items-center ">
+              <Image
+                src={headRobo}
+                className="h-15 hover:scale-110 transform-all ease-in-out "
+                alt="logo"
+              />
             </NextLink>
           </div>
           <div className="md:flex md:justify-between">
@@ -85,7 +89,7 @@ export default function Footer() {
                 className="text-white hover:text-gray-900  "
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-6 h-6 hover:scale-125 transform-all ease-in-out"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -106,7 +110,7 @@ export default function Footer() {
                 className="text-white hover:text-gray-900  "
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-6 h-6 hover:scale-125 transform-all ease-in-out"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -127,7 +131,7 @@ export default function Footer() {
                 className="text-white hover:text-gray-900  "
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-6 h-6 hover:scale-125 transform-all ease-in-out "
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

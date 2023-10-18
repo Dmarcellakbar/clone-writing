@@ -10,12 +10,12 @@ export default function Pricing() {
       <section className="bg-gray-50 relative z-[5]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 z-10">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12 pt-10">
-            <div className="mb-4 text-3xl px-4 lg:px-16 lg:text-6xl tracking-tight font-extrabold text-gray-900 ">
+            <div className="mb-4 text-4xl px-4 lg:px-16 lg:text-6xl tracking-tight font-extrabold text-gray-900 ">
               <span className="text-black leading-tight">
                 Pricing plans for teams of all sizes
               </span>
             </div>
-            <p className="mb-5 font-light text-gray-500 text-md ">
+            <p className="mb-5 font-light text-gray-500 text-base ">
               Choose an affordable plan {"that's"} packed with the best features
               for engaging your audience, creating customer loyalty, and driving
               sales.
@@ -41,7 +41,7 @@ export default function Pricing() {
               </p>
 
               <Link href={'/account/signup'}>
-                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-2  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   <span className="align-middle">Select Package</span>
                 </button>
               </Link>
@@ -185,7 +185,7 @@ export default function Pricing() {
               </p>
 
               <Link href={'/account/signup'}>
-                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-2  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   <span className="align-middle">Select Package</span>
                 </button>
               </Link>
@@ -327,7 +327,7 @@ export default function Pricing() {
               </p>
 
               <Link href={'/account/signup'}>
-                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-3  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                <button className="w-full hover:transition hover:scale-105 ease-in-out   text-sm py-2  px-3 lg:px-6 mb-6 text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                   <span className="align-middle">Select Package</span>
                 </button>
               </Link>

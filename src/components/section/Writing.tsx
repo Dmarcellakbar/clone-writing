@@ -23,7 +23,7 @@ export default function Pricing() {
               </div>
 
               <div className="p-6 text-left  mb-8 ">
-                <span className=" text-purple-600 text-md text-left font-semibold ">
+                <span className=" text-purple-600 text-lg text-left font-semibold ">
                   <span className=" text-black">
                     Say goodbye to the mundane task of thinking about what to
                     write and focus on what you do best -{' '}
@@ -40,13 +40,13 @@ export default function Pricing() {
               </div>
 
               <div className="px-6 text-left  mb-4">
-                <span className=" text-black text-md text-left font-semibold ">
+                <span className=" text-black text-lg text-left font-semibold ">
                   Choose a tool, write a few ideas, and be amazed by the content
                   you can create.
                 </span>
               </div>
               <div className="px-6 text-left  mb-8 ">
-                <span className=" text-purple-600 text-md text-left font-semibold ">
+                <span className=" text-purple-600 text-lg text-left font-semibold ">
                   <span className="text-black">From</span> perfectly crafted
                   emails, ads, <span className="text-black">to</span> sales
                   letters <span className="text-black">or</span> full outreach
@@ -68,7 +68,7 @@ export default function Pricing() {
               </div>
 
               <div className="px-6 text-left  mb-8 ">
-                <span className=" text-purple-600 text-md text-left font-semibold ">
+                <span className=" text-purple-600 text-lg text-left font-semibold ">
                   <span className="text-black">
                     Writing Hero has the tools you need to make your writing
                     process{' '}
@@ -84,7 +84,7 @@ export default function Pricing() {
           </div>
           <div className="py-4 ">
             <Link href={'/account/signup'}>
-              <button className="py-3  px-6 hover:transition hover:scale-105 ease-in-out   w-fit h-full text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
+              <button className="py-2  px-6 hover:transition hover:scale-105 ease-in-out   w-fit h-full text-white font-bold text-md  rounded-full bg-gradient-to-r from-10% from-indigo-500 via-40% via-purple-500 to-98% to-pink-500">
                 <span className="mr-4 align-middle h-full w-full">
                   Give it a try now!
                 </span>
